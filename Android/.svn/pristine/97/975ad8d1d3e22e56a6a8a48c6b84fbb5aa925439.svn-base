@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\dialog_loading_img.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\mipmap-hdpi\\dialog_loading_img.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\logo_pgb.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\mipmap-hdpi\\logo_pgb.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\loading_icon.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\mipmap-hdpi\\loading_icon.png"
+    }
+]

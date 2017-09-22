@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">评估帮</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="newuser_register">新用户注册</string>
+    <string name="user_control">《用户协议》</string>
+    <string name="skip">跳过</string>
+    <string name="login">登录</string>
+    <string name="index">首页</string>
+    <string name="enquiry">询价</string>
+    <string name="survey">勘察</string>
+    <string name="me">我</string>
+    <string name="house">房产</string>
+    <string name="land">土地</string>
+    <string name="rich">资产</string>
+    <string name="title_activity_select_group_people">SelectGroupPeople</string>
+
+</resources>

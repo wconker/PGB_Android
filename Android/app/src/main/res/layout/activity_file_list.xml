@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.pgb.Activity.FileLibrary.FileList">
+
+    <com.android.pgb.View.CustomBar
+        android:id="@+id/bar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        custom:left_name="返回"
+        custom:right_name=""
+        custom:titlename="文档中心"
+        tools:layout_editor_absoluteY="0dp"
+        custom:layout_constraintRight_toRightOf="parent"
+        custom:layout_constraintLeft_toLeftOf="parent">
+
+    </com.android.pgb.View.CustomBar>
+
+
+    <ListView
+        android:id="@+id/recyc"
+        android:layout_width="0dp"
+        android:layout_height="501dp"
+        android:layout_marginTop="1dp"
+        custom:layout_constraintTop_toBottomOf="@+id/bar"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintRight_toRightOf="parent">
+
+    </ListView>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "C:\\Project\\Android\\pickerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pickerview_time.xml",
+        "source": "C:\\Project\\Android\\pickerview\\build\\intermediates\\bundles\\debug\\res\\layout\\pickerview_time.xml"
+    },
+    {
+        "merged": "C:\\Project\\Android\\pickerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_basepickerview.xml",
+        "source": "C:\\Project\\Android\\pickerview\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_basepickerview.xml"
+    },
+    {
+        "merged": "C:\\Android\\pickerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pickerview_options.xml",
+        "source": "C:\\Android\\pickerview\\build\\intermediates\\bundles\\debug\\res\\layout\\pickerview_options.xml"
+    },
+    {
+        "merged": "C:\\Android\\pickerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_basepickerview.xml",
+        "source": "C:\\Android\\pickerview\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_basepickerview.xml"
+    },
+    {
+        "merged": "C:\\Project\\Android\\pickerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\include_pickerview_topbar.xml",
+        "source": "C:\\Project\\Android\\pickerview\\build\\intermediates\\bundles\\debug\\res\\layout\\include_pickerview_topbar.xml"
+    },
+    {
+        "merged": "C:\\Android\\pickerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pickerview_time.xml",
+        "source": "C:\\Android\\pickerview\\build\\intermediates\\bundles\\debug\\res\\layout\\pickerview_time.xml"
+    },
+    {
+        "merged": "C:\\Project\\Android\\pickerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pickerview_options.xml",
+        "source": "C:\\Project\\Android\\pickerview\\build\\intermediates\\bundles\\debug\\res\\layout\\pickerview_options.xml"
+    },
+    {
+        "merged": "C:\\Android\\pickerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\include_pickerview_topbar.xml",
+        "source": "C:\\Android\\pickerview\\build\\intermediates\\bundles\\debug\\res\\layout\\include_pickerview_topbar.xml"
+    }
+]

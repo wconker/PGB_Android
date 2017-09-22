@@ -1,0 +1,40 @@
+// Generated code from Butter Knife. Do not modify!
+package com.android.pgb.Activity.Activity_Job;
+
+import android.view.View;
+import butterknife.ButterKnife.Finder;
+import butterknife.ButterKnife.ViewBinder;
+
+public class Activity_Home$$ViewBinder<T extends com.android.pgb.Activity.Activity_Job.Activity_Home> implements ViewBinder<T> {
+  @Override public void bind(final Finder finder, final T target, Object source) {
+    View view;
+    view = finder.findRequiredView(source, 2131624006, "field 'all' and method 'onViewClicked'");
+    target.all = finder.castView(view, 2131624006, "field 'all'");
+    view.setOnClickListener(
+      new butterknife.internal.DebouncingOnClickListener() {
+        @Override public void doClick(
+          android.view.View p0
+        ) {
+          target.onViewClicked(p0);
+        }
+      });
+    view = finder.findRequiredView(source, 2131624322, "field 'myzp' and method 'onViewClicked'");
+    target.myzp = finder.castView(view, 2131624322, "field 'myzp'");
+    view.setOnClickListener(
+      new butterknife.internal.DebouncingOnClickListener() {
+        @Override public void doClick(
+          android.view.View p0
+        ) {
+          target.onViewClicked(p0);
+        }
+      });
+    view = finder.findRequiredView(source, 2131624321, "field 'zpList'");
+    target.zpList = finder.castView(view, 2131624321, "field 'zpList'");
+  }
+
+  @Override public void unbind(T target) {
+    target.all = null;
+    target.myzp = null;
+    target.zpList = null;
+  }
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/img_title"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="查勘记录表"
+            android:textColor="#008000"
+            android:textSize="@dimen/wkhContent"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/fjbs"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="查勘记录表"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/wkhContent"
+            android:typeface="monospace"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/img_ms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="---"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/wkhContent"
+            android:typeface="monospace" />
+
+        <com.android.pgb.Utils.Image.Photo
+            android:id="@+id/photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.android.pgb.Utils.Image.Photo>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:background="@color/gray" />
+
+</LinearLayout>

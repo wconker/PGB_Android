@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.android.pgb.Activity.Activity_Job.Activity_Home">
+
+    <com.android.pgb.View.CustomBar
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        custom:left_name="返回"
+        custom:right_name=""
+        custom:titlename="招聘与求职">
+
+    </com.android.pgb.View.CustomBar>
+
+    <LinearLayout
+        android:id="@+id/zp_List"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ff7a00"
+            android:text="全部"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/myzp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ff7a00"
+            android:text="我的"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <ViewStub
+        android:id="@+id/job_want"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/job_want" />
+
+    <ViewStub
+        android:id="@+id/job_apply"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/job_apply" />
+
+
+</LinearLayout>

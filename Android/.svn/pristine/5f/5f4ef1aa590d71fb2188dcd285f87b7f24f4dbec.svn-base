@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Project\\Android\\PhotoPicker\\build\\intermediates\\res\\merged\\release\\xml\\__picker_provider_paths.xml",
+        "source": "C:\\Project\\Android\\PhotoPicker\\src\\main\\res\\xml\\__picker_provider_paths.xml"
+    },
+    {
+        "merged": "C:\\Android\\PhotoPicker\\build\\intermediates\\res\\merged\\release\\xml\\__picker_provider_paths.xml",
+        "source": "C:\\Android\\PhotoPicker\\src\\main\\res\\xml\\__picker_provider_paths.xml"
+    }
+]

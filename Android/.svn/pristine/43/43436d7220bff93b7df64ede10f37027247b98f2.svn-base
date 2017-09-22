@@ -1,0 +1,95 @@
+package com.android.pgb.Bean;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import com.android.pgb.Utils.JSONUtils;
+
+import org.json.JSONObject;
+
+/**
+ * Created by kanghui on 2017/1/20.
+ */
+
+public class NewBean implements Parcelable {
+
+
+    public NewBean(JSONObject j) {
+        setTitle(JSONUtils.getString(j, "title"));
+        setUrl(JSONUtils.getString(j, "url"));
+        setId(JSONUtils.getInt(j, "id",0));
+        setTime(JSONUtils.getString(j, "fbsj"));
+
+    }
+
+    private String title;
+    private String url;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    private int id;
+    private String time;
+    private int category;
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
+
+    public int getCategory() {
+        return category;
+    }
+
+    public void setCategory(int category) {
+        this.category = category;
+    }
+
+    protected NewBean(Parcel in) {
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    public static final Creator<NewBean> CREATOR = new Creator<NewBean>() {
+        @Override
+        public NewBean createFromParcel(Parcel in) {
+            return new NewBean(in);
+        }
+
+        @Override
+        public NewBean[] newArray(int size) {
+            return new NewBean[size];
+        }
+    };
+}

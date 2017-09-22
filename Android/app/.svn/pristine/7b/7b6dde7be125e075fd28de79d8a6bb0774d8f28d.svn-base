@@ -1,0 +1,17 @@
+package com.android.pgb.Activity.MyApplication;
+
+import android.app.Application;
+
+import com.baidu.mapapi.SDKInitializer;
+
+/**
+ * Created by wu on 2017/4/4.
+ */
+
+public class MyApplication extends Application {
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        SDKInitializer.initialize(this);
+    }
+}

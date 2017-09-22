@@ -1,0 +1,166 @@
+package com.android.pgb.Activity.Activity_CK;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.os.CountDownTimer;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import com.android.pgb.Activity.Activity_XJ.Activity_BjInfo;
+import com.android.pgb.Activity.Activity_XJ.Activity_XjInfo;
+import com.android.pgb.Bean.TBBean;
+import com.android.pgb.Bean.ZBBean;
+import com.android.pgb.BroadCast.ExChange;
+import com.android.pgb.R;
+import com.android.pgb.Utils.Dialog;
+import com.android.pgb.Utils.Image.Photo;
+import com.android.pgb.Utils.JSONUtils;
+import com.android.pgb.Utils.Log;
+import com.android.pgb.Utils.Net.network;
+import com.android.pgb.Utils.PhotoPicker.PhotoT;
+import com.android.pgb.View.CBarView;
+import com.android.pgb.View.SquareImage;
+import com.bumptech.glide.Glide;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Activity_TbInfo extends Activity implements ExChange.CallBackForData {
+
+    private ExChange ex;
+    private TBBean tbBean;
+    private ImageView wx_tx;
+    private PhotoT fjLayout;
+    private TextView tb_bdw, name, tb_tbsj, tb_zbj, tb_bz, tb_tbj, title_info, bjsl_tv, zbs;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity__tb_info);
+        new CBarView(this, new CBarView.OnClickListener() {
+            @Override
+            public void onLeftClick() {
+                super.onLeftClick();
+                finish();
+            }
+
+            @Override
+            public void onRightClick() {
+                super.onRightClick();
+
+            }
+        }, null);
+
+        ex = new ExChange(this);
+        int tbId = getIntent().getIntExtra("tbid", 0);
+        ex.getTbInfo(tbId);
+        dialog = Dialog.showWaitDialog(Activity_TbInfo.this, "加载中...", false, false);
+        countDownTimer.start();
+        initView();
+    }
+
+    private android.app.Dialog dialog;
+    //防止无限加载
+    CountDownTimer countDownTimer = new CountDownTimer(5 * 1000, 1000) {
+        @Override
+        public void onTick(long l) {
+        }
+
+        @Override
+        public void onFinish() {
+
+            if (dialog.isShowing()) {
+                network.CheckNetWork(Activity_TbInfo.this);
+                dialog.setCanceledOnTouchOutside(true);
+            }
+        }
+    };
+
+    private void initView() {
+        fjLayout = (PhotoT) this.findViewById(R.id.tbinfo_fj);
+        tb_bdw = (TextView) this.findViewById(R.id.tb_bdw);
+        tb_zbj = (TextView) this.findViewById(R.id.tb_zbj);
+        tb_bz = (TextView) this.findViewById(R.id.tb_bz);
+        tb_tbj = (TextView) this.findViewById(R.id.tb_tbj);
+        title_info = (TextView) this.findViewById(R.id.title_info);
+        bjsl_tv = (TextView) this.findViewById(R.id.bjsl_tv);
+        zbs = (TextView) this.findViewById(R.id.zbs);
+        tb_tbsj = (TextView) this.findViewById(R.id.tb_tbsj);
+        name = (TextView) this.findViewById(R.id.name);
+        wx_tx = (ImageView) this.findViewById(R.id.wx_tx);
+    }
+
+    private void setData() {
+
+        JSONObject User = tbBean.getUser();
+        tb_bdw.setText(tbBean.getBdw());
+        tb_zbj.setText(tbBean.getZbbj().toString() + "");
+        tb_tbj.setText(tbBean.getTbj());
+        tb_bz.setText(tbBean.getTbsm());
+        tb_tbsj.setText(tbBean.getTbsj());
+        name.setText(JSONUtils.getString(User, "nc"));
+        title_info.setText(JSONUtils.getString(User, "title"));
+        bjsl_tv.setText(JSONUtils.getString(User, "bjs"));
+        zbs.setText(JSONUtils.getString(User, "zbs"));
+        Glide.with(this).load(JSONUtils.getString(User, "wx_tx")).into(wx_tx);
+
+        if (tbBean.getFj_img() != null) {
+            try {
+                JSONArray fj_img = tbBean.getFj_img();
+                List<String> pList = new ArrayList<>();
+                for (int i = 0; i < fj_img.length(); i++) {
+                    JSONObject obj = (JSONObject) fj_img.get(i);
+                    String url = obj.get("img_url").toString();
+                    pList.add(url);
+                }
+                fjLayout.setUrl(pList);
+                fjLayout.setClickable(false);
+            } catch (Exception e) {
+
+            }
+        }
+
+
+    }
+
+    private Handler handler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            String value = msg.getData().getString("getTbInfo");
+            JSONObject obj = null;
+            try {
+                obj = new JSONObject(value);
+                JSONObject arr = (JSONObject) JSONUtils.getJSONArray(obj, "data").get(0);
+                tbBean = new TBBean(arr);
+                tbBean.setUser((JSONObject) JSONUtils.getJSONArray(arr, "userinfo").get(0));
+                setData();
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+    };
+
+    @Override
+    public void onMessage(String str, String cmd, int code) {
+        Message msg = Message.obtain();
+        dialog.cancel();
+        if (cmd.equals("business.getTbInfo")) {
+            Bundle bundle = new Bundle();
+            bundle.putString("getTbInfo", str);
+            msg.setData(bundle);
+            msg.what = 100;
+            handler.sendMessage(msg);
+        }
+    }
+}

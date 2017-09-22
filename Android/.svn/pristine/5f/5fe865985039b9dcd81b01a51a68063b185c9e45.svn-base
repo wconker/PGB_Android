@@ -1,0 +1,18 @@
+// Generated code from Butter Knife. Do not modify!
+package com.android.pgb.Activity.Activity_Me;
+
+import android.view.View;
+import butterknife.ButterKnife.Finder;
+import butterknife.ButterKnife.ViewBinder;
+
+public class Activity_Userinstruction$$ViewBinder<T extends com.android.pgb.Activity.Activity_Me.Activity_Userinstruction> implements ViewBinder<T> {
+  @Override public void bind(final Finder finder, final T target, Object source) {
+    View view;
+    view = finder.findRequiredView(source, 2131623956, "field 'webview'");
+    target.webview = finder.castView(view, 2131623956, "field 'webview'");
+  }
+
+  @Override public void unbind(T target) {
+    target.webview = null;
+  }
+}

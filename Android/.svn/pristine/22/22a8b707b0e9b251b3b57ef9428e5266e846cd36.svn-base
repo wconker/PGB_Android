@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.android.pgb.Activity.Activity_Job.Activity_Home">
+
+    <com.android.pgb.View.CustomBar
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        custom:left_name="返回"
+        custom:right_name=""
+        custom:titlename="我要投标">
+
+    </com.android.pgb.View.CustomBar>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/zp_List"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/all"
+            android:text="全部"
+            android:textColor="@color/white"
+            android:background="#ff7a00"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/myzp"
+            android:textColor="@color/white"
+            android:background="#ff7a00"
+            android:layout_weight="1"
+            android:text="我的"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+<ViewStub
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/job_want"
+    android:layout="@layout/job_want"/>
+<ViewStub
+    android:layout="@layout/job_apply"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/job_apply"/>
+
+
+</LinearLayout>

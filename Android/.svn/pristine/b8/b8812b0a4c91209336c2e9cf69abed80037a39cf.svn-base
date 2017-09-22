@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Android\\PhotoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\__picker_menu_preview.xml",
+        "source": "C:\\Android\\PhotoPicker\\build\\intermediates\\bundles\\debug\\res\\menu\\__picker_menu_preview.xml"
+    },
+    {
+        "merged": "C:\\Android\\PhotoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\__picker_menu_picker.xml",
+        "source": "C:\\Android\\PhotoPicker\\build\\intermediates\\bundles\\debug\\res\\menu\\__picker_menu_picker.xml"
+    },
+    {
+        "merged": "C:\\Project\\Android\\PhotoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\__picker_menu_preview.xml",
+        "source": "C:\\Project\\Android\\PhotoPicker\\build\\intermediates\\bundles\\debug\\res\\menu\\__picker_menu_preview.xml"
+    },
+    {
+        "merged": "C:\\Project\\Android\\PhotoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\__picker_menu_picker.xml",
+        "source": "C:\\Project\\Android\\PhotoPicker\\build\\intermediates\\bundles\\debug\\res\\menu\\__picker_menu_picker.xml"
+    }
+]

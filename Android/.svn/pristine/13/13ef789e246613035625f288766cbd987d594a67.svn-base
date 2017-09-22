@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "C:\\Project\\Android\\FlycoTabLayout_Lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_tab_left.xml",
+        "source": "C:\\Project\\Android\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_tab_left.xml"
+    },
+    {
+        "merged": "C:\\Android\\FlycoTabLayout_Lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_tab_bottom.xml",
+        "source": "C:\\Android\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_tab_bottom.xml"
+    },
+    {
+        "merged": "C:\\Project\\Android\\FlycoTabLayout_Lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_tab_bottom.xml",
+        "source": "C:\\Project\\Android\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_tab_bottom.xml"
+    },
+    {
+        "merged": "C:\\Android\\FlycoTabLayout_Lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_tab_top.xml",
+        "source": "C:\\Android\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_tab_top.xml"
+    },
+    {
+        "merged": "C:\\Android\\FlycoTabLayout_Lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_tab_right.xml",
+        "source": "C:\\Android\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_tab_right.xml"
+    },
+    {
+        "merged": "C:\\Project\\Android\\FlycoTabLayout_Lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_tab_segment.xml",
+        "source": "C:\\Project\\Android\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_tab_segment.xml"
+    },
+    {
+        "merged": "C:\\Project\\Android\\FlycoTabLayout_Lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_tab_right.xml",
+        "source": "C:\\Project\\Android\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_tab_right.xml"
+    },
+    {
+        "merged": "C:\\Project\\Android\\FlycoTabLayout_Lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_tab.xml",
+        "source": "C:\\Project\\Android\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_tab.xml"
+    },
+    {
+        "merged": "C:\\Android\\FlycoTabLayout_Lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_tab_segment.xml",
+        "source": "C:\\Android\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_tab_segment.xml"
+    },
+    {
+        "merged": "C:\\Project\\Android\\FlycoTabLayout_Lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_tab_top.xml",
+        "source": "C:\\Project\\Android\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_tab_top.xml"
+    },
+    {
+        "merged": "C:\\Android\\FlycoTabLayout_Lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_tab.xml",
+        "source": "C:\\Android\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_tab.xml"
+    },
+    {
+        "merged": "C:\\Android\\FlycoTabLayout_Lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_tab_left.xml",
+        "source": "C:\\Android\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_tab_left.xml"
+    }
+]

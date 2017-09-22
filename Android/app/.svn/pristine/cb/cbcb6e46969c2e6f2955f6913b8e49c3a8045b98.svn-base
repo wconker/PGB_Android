@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <com.android.pgb.View.CustomBar
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        custom:left_name="返回"
+        custom:right_visible="gone"
+        custom:titlename="我要询价">
+
+    </com.android.pgb.View.CustomBar>
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+
+        <CheckBox
+            android:id="@+id/checcbox_fc"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/checkbox_nobox"
+            android:button="@null"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:text="房地产" />
+
+        <CheckBox
+            android:textSize="12dp"
+            android:layout_width="50dp"
+            android:id="@+id/checcbox_td"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/checkbox_nobox"
+            android:button="@null"
+            android:gravity="center"
+            android:text="土地" />
+
+        <!--<CheckBox-->
+            <!--android:textSize="12dp"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:id="@+id/checcbox_zc"-->
+
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/checkbox_nobox"-->
+            <!--android:button="@null"-->
+            <!--android:gravity="center"-->
+            <!--android:text="资产" />-->
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ScrollView
+       
+        android:id="@+id/add_type_fc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/fdc_layout">
+
+        </include>
+    </ScrollView>
+
+    <ScrollView
+
+        android:id="@+id/add_type_tudi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <include layout="@layout/td_layout">
+
+        </include>
+
+    </ScrollView>
+
+    <!--<ScrollView-->
+        <!--android:id="@+id/add_type_zc"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:visibility="gone">-->
+
+
+        <!--<include layout="@layout/zc_layout">-->
+
+        <!--</include>-->
+
+    <!--</ScrollView>-->
+
+
+</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_company_mate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.android.pgb.Activity.Activity_Me.CompanyMate">
+
+    <com.android.pgb.View.CustomBar
+        android:id="@+id/bar"
+        custom:left_name="返回"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        custom:titlename="我的同事"></com.android.pgb.View.CustomBar>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pulltorefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="5dp"
+        android:fastScrollEnabled="false"
+        android:focusable="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        ptr:ptrMode="both">
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+
+</LinearLayout>

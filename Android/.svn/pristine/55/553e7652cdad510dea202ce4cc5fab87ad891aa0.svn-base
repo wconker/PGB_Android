@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_bj"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.android.pgb.Activity.Activity_XJ.Activity_addBJ">
+
+    <com.android.pgb.View.CustomBar
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        custom:left_name="返回"
+        custom:right_name=""
+        custom:titlename="我要报价">
+
+    </com.android.pgb.View.CustomBar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/housecertificate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="物业地址"
+            android:textColor="@color/wkh_gray_deeper"
+            android:textSize="@dimen/wkhContent"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/bj_wydz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="物业地址"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="0dp"
+            android:paddingTop="8dp"
+            android:textSize="@dimen/wkhContent" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="left"
+            android:text="建筑面积"
+            android:textColor="@color/wkh_gray_deeper"
+            android:textSize="@dimen/wkhContent"
+            android:typeface="monospace" />
+
+
+        <TextView
+
+            android:id="@+id/bj_mj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="建筑面积(㎡)"
+            android:maxLength="11"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="0dp"
+            android:paddingTop="8dp"
+            android:textSize="@dimen/wkhContent" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="left"
+            android:text="单价(元)"
+            android:textColor="@color/wkh_gray_deeper"
+            android:textSize="@dimen/wkhContent"
+            android:typeface="monospace" />
+
+        <EditText
+            android:id="@+id/dj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="输入单价"
+            android:inputType="numberDecimal"
+            android:maxLength="11"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="0dp"
+            android:paddingTop="8dp"
+            android:textSize="@dimen/wkhContent" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:background="@color/gray" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:background="@color/gray" />
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="left"
+            android:text="总价(万)"
+            android:textColor="@color/wkh_gray_deeper"
+            android:textSize="@dimen/wkhContent"
+            android:typeface="monospace" />
+
+        <EditText
+            android:id="@+id/zj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="输入总价(万)"
+            android:maxLength="11"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="0dp"
+            android:paddingTop="8dp"
+            android:textSize="@dimen/wkhContent" />
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:background="@color/gray" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:background="@color/gray" />
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/bz"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="价格依据"
+            android:textColor="@color/wkh_gray_deeper"
+            android:textSize="@dimen/wkhContent"
+            android:typeface="monospace" />
+
+        <EditText
+            android:id="@+id/fdc_bz_et"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:layout_weight="0.79"
+            android:background="@null"
+            android:gravity="center"
+            android:hint=""
+            android:inputType="textMultiLine"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="0dp"
+            android:paddingTop="8dp"
+            android:textSize="@dimen/wkhContent" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="left"
+            android:text="附件"
+            android:textColor="@color/wkh_gray_deeper"
+            android:textSize="@dimen/wkhContent"
+            android:typeface="monospace" />
+
+
+    </LinearLayout>
+
+    <com.android.pgb.Utils.Image.Photo
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp">
+
+    </com.android.pgb.Utils.Image.Photo>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/add_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/button_press"
+            android:text="提交报价"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_level1" />
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

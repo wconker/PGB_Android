@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bgbule">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/id_text_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="5dp"
+        android:fastScrollEnabled="false"
+        android:focusable="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true">
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+</LinearLayout>

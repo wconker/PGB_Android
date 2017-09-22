@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "C:\\Project\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\warn.png",
+        "source": "C:\\Project\\Android\\app\\src\\main\\res\\drawable-xhdpi\\warn.png"
+    },
+    {
+        "merged": "C:\\Project\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\error.png",
+        "source": "C:\\Project\\Android\\app\\src\\main\\res\\drawable-xhdpi\\error.png"
+    },
+    {
+        "merged": "C:\\Project\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\success.png",
+        "source": "C:\\Project\\Android\\app\\src\\main\\res\\drawable-xhdpi\\success.png"
+    },
+    {
+        "merged": "C:\\Project\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_cash.png",
+        "source": "C:\\Project\\Android\\app\\src\\main\\res\\drawable-xhdpi\\icon_cash.png"
+    },
+    {
+        "merged": "C:\\Project\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\askprice_icon.png",
+        "source": "C:\\Project\\Android\\app\\src\\main\\res\\drawable-xhdpi\\askprice_icon.png"
+    },
+    {
+        "merged": "C:\\Project\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\wait.png",
+        "source": "C:\\Project\\Android\\app\\src\\main\\res\\drawable-xhdpi\\wait.png"
+    },
+    {
+        "merged": "C:\\Project\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_set.png",
+        "source": "C:\\Project\\Android\\app\\src\\main\\res\\drawable-xhdpi\\icon_set.png"
+    },
+    {
+        "merged": "C:\\Project\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\askprice_icon_48.png",
+        "source": "C:\\Project\\Android\\app\\src\\main\\res\\drawable-xhdpi\\askprice_icon_48.png"
+    },
+    {
+        "merged": "C:\\Project\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\asktag_icon.png",
+        "source": "C:\\Project\\Android\\app\\src\\main\\res\\drawable-xhdpi\\asktag_icon.png"
+    },
+    {
+        "merged": "C:\\Project\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\apptalk.png",
+        "source": "C:\\Project\\Android\\app\\src\\main\\res\\drawable-xhdpi\\apptalk.png"
+    }
+]

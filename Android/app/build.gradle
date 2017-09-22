@@ -1,0 +1,76 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    defaultConfig {
+
+        multiDexEnabled true
+    }
+
+
+
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs "libs"
+    }
+}
+
+dependencies {
+    // compile(name: "PhotoPicker-release", ext: "aar")
+    compile files('libs/volly-1.0.11.jar')
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/universal-image-loader-1.9.2-SNAPSHOT-with-sources.jar')
+    compile project(':library')
+    compile project(':FlycoTabLayout_Lib')
+    compile project(':pickerview')
+    compile files('libs/baidumapapi_map_v4_2_1.jar')
+    compile files('libs/wechat-sdk-android-with-mta-1.0.2.jar')
+    compile files('libs/alipaySdk-20170309.jar')
+    compile files('libs/guideshowlib.jar')
+    compile project(':PhotoPicker')
+    compile project(':libraryForSwitch')
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'io.reactivex:rxjava:1.1.0'
+    compile 'com.squareup.retrofit2:retrofit:2.0.0-beta4'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0-beta4'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.tencent.bugly:crashreport:latest.release'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.qiyukf.unicorn:unicorn:3.5.0'
+    compile 'com.jakewharton:butterknife:7.0.0'
+    compile 'com.trello:rxlifecycle-components:0.6.1'
+    compile 'com.squareup.okhttp3:okhttp-ws:3.4.2'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'jp.wasabeef:glide-transformations:2.0.1'
+    testCompile 'junit:junit:4.12'
+}

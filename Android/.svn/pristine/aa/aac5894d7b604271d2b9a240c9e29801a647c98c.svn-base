@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi\\icon_index.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\mipmap-xxhdpi\\icon_index.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi\\icon_index_gray.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\mipmap-xxhdpi\\icon_index_gray.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi\\logo144_144.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\mipmap-xxhdpi\\logo144_144.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    }
+]

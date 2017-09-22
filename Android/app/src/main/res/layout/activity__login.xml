@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity__login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    android:orientation="vertical"
+    tools:context="com.android.pgb.Activity.Activity_Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.android.pgb.View.RoundImageView
+                android:id="@+id/tx"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="center"
+                android:src="@drawable/icon_empty" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fl_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></FrameLayout>
+
+            <RadioGroup
+                android:visibility="gone"
+                android:id="@+id/rg_group"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_left"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_radio_left"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:text="验证码登录"
+                    android:textColor="@drawable/color_radiobutton"
+                    android:visibility="gone" />
+
+                <RadioButton
+
+                    android:id="@+id/rb_right"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_radio_right"
+                    android:button="@null"
+                    android:enabled="false"
+                    android:clickable="false"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:text="密码登录"
+                    android:textColor="@drawable/color_radiobutton" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.android.pgb.View.CustomBar
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        custom:left_visible="gone"
+        custom:right_visible="gone"
+        custom:titlename="登录">
+
+    </com.android.pgb.View.CustomBar>
+
+</LinearLayout>

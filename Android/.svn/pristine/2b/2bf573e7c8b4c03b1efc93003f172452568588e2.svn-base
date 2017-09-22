@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Project\\Android\\pickerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\selector_pickerview_btn.xml",
+        "source": "C:\\Project\\Android\\pickerview\\build\\intermediates\\bundles\\debug\\res\\drawable\\selector_pickerview_btn.xml"
+    },
+    {
+        "merged": "C:\\Android\\pickerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\selector_pickerview_btn.xml",
+        "source": "C:\\Android\\pickerview\\build\\intermediates\\bundles\\debug\\res\\drawable\\selector_pickerview_btn.xml"
+    }
+]

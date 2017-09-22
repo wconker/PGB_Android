@@ -1,0 +1,63 @@
+package com.android.pgb.Adapter;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.TextView;
+
+import com.android.pgb.R;
+
+/**
+ * Created by kanghui on 2017/1/5.
+ */
+
+public class ListAdapter extends BaseAdapter {
+
+    private Context mcontext;
+    public   ListAdapter(Context context){
+        this.mcontext=context;
+
+    }
+    @Override
+    public int getCount() {
+        return 4;
+    }
+
+    @Override
+    public Object getItem(int position) {
+        return 4;
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return position;
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        ViewHolder viewHolder;
+
+       if(convertView==null)
+       {
+            viewHolder=new ViewHolder();
+            convertView=  LayoutInflater.from(mcontext).inflate(R.layout.listview_items,null); //加载item
+            viewHolder.info = (TextView) convertView.findViewById(R.id.listview_text);  //找到控件
+            viewHolder.date = (TextView) convertView.findViewById(R.id.listview_date);
+            convertView.setTag(viewHolder);
+
+       }else {
+           viewHolder= (ViewHolder) convertView.getTag(); //
+       }
+        viewHolder.info.setText("国土资源部关于贯彻实施《资产法》的通知"); //赋值
+        viewHolder.date.setText("2016-12-31");
+
+        return convertView;
+    }
+    private class ViewHolder{
+        TextView info;
+        TextView date;
+
+    }
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="FAB">
+        <!-- Background color -->
+        <attr name="bg_color" format="color|reference"/>
+        <attr name="bg_color_pressed" format="color|reference"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="rainbowbar">
+        <attr name="rainbowbar_hspace" format="dimension"></attr>
+        <attr name="rainbowbar_vspace" format="dimension"></attr>
+        <attr name="rainbowbar_color" format="color"></attr>
+    </declare-styleable>
+
+</resources>

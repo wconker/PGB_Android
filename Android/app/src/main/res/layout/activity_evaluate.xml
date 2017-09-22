@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.android.pgb.Activity.Activity_Tool.Evaluate">
+
+    <com.android.pgb.View.CustomBar
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        custom:left_name="返回"
+        custom:right_name=""
+        custom:titlename="智能评估">
+
+    </com.android.pgb.View.CustomBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <FrameLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/search_et_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:drawablePadding="5dp"
+
+                android:hint="楼盘检索"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:textSize="19sp" />
+
+            <ImageView
+                android:id="@+id/search_iv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="20dp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/search_btn_clear"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="清空"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/BuildingList"
+        android:layout_width="match_parent"
+        android:layout_height="280dp">
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/housecertificate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="面积"
+            android:textColor="@color/wkh_gray_deeper"
+            android:textSize="@dimen/wkhContent"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/HouseArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="left"
+            android:hint=""
+            android:inputType="numberDecimal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="0dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/wkhContent" />
+
+        <TextView
+
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="㎡"
+            android:textColor="@color/wkh_gray_deeper"
+            android:textSize="@dimen/wkhContent"
+            android:typeface="monospace" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:background="@color/gray" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="装修情况"
+            android:textColor="@color/wkh_gray_deeper"
+            android:textSize="@dimen/wkhContent"
+            android:typeface="monospace" />
+
+        <Spinner
+            android:id="@+id/house_decoration"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:entries="@array/decoration"></Spinner>
+
+        <TextView
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="万元"
+            android:textColor="@color/wkh_gray_deeper"
+            android:textSize="@dimen/wkhContent"
+            android:typeface="monospace" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="特殊情况"
+            android:textColor="@color/wkh_gray_deeper"
+            android:textSize="@dimen/wkhContent"
+            android:typeface="monospace" />
+
+        <Spinner
+            android:id="@+id/house_special"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:entries="@array/special"></Spinner>
+
+        <TextView
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="万元"
+            android:textColor="@color/wkh_gray_deeper"
+            android:textSize="@dimen/wkhContent"
+            android:typeface="monospace" />
+    </LinearLayout>
+
+<Button
+    android:id="@+id/Start_evaluate"
+    android:textColor="@color/white"
+    android:textSize="18dp"
+    android:background="@color/colorPrimary"
+    android:layout_margin="10dp"
+    android:text="开始评估"
+    android:layout_width="match_parent"
+    android:layout_height="60dp" />
+</LinearLayout>

@@ -1,0 +1,350 @@
+[
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\dialog_loading.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\dialog_loading.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_colored_material.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\notification_bg_low.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\listview_border.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\listview_border.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\selector_pickerview_btn.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.bigkoo\\pickerview\\2.1.1\\res\\drawable\\selector_pickerview_btn.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_borderless_material.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\selector_radio_button.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\selector_radio_button.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\unchecked.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\unchecked.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\button_border.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\button_border.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\check_bottom.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\check_bottom.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\circle_red.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\circle_red.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\buttoniconpress4.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\buttoniconpress4.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\button_border_cricle.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\button_border_cricle.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\design_snackbar_background.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\drawable\\design_snackbar_background.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\ratingstars.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\ratingstars.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\drawable\\design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_clear_material.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\star_full.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\star_full.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\bg_radio_right.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\bg_radio_right.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_material.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\notification_bg.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\flash_pic00.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\flash_pic00.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_tick_mark_material.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\buttoniconpress2.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\buttoniconpress2.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_radio_material.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_dialog_material_background.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\bg_radio_left.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\bg_radio_left.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\spacer_medium.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\spacer_medium.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\gv_bg.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\gv_bg.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\checkbox_onlyborder.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\checkbox_onlyborder.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\indicator_bg_top.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\Android\\library\\unspecified\\res\\drawable\\indicator_bg_top.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\__picker_delete.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\Android\\PhotoPicker\\unspecified\\res\\drawable\\__picker_delete.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\__picker_photo_bg.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\Android\\PhotoPicker\\unspecified\\res\\drawable\\__picker_photo_bg.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\leftandright.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\leftandright.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_menu_overflow_material.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_vector_test.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_vector_test.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\chongzhi_button_press.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\chongzhi_button_press.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\__picker_bg_material_item.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\Android\\PhotoPicker\\unspecified\\res\\drawable\\__picker_bg_material_item.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\button_press.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\button_press.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\circle_green.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\circle_green.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\__picker_camera.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\Android\\PhotoPicker\\unspecified\\res\\drawable\\__picker_camera.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\star_empty.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\star_empty.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\floatbutton.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\floatbutton.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_tab_indicator_material.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\flash_pic01.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\flash_pic01.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_search_api_material.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\checkbox_border.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\checkbox_border.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\checkbox_nobox.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\checkbox_nobox.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\dot.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\dot.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_text_cursor_material.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\color_radiobutton.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\color_radiobutton.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\navigation_empty_icon.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\drawable\\navigation_empty_icon.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\icon_stub.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\icon_stub.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_edit_text_material.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\buttoniconpress.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\buttoniconpress.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_switch_thumb_material.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\cricle_border.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\cricle_border.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\notification_tile_bg.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\design_password_eye.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\drawable\\design_password_eye.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_cab_background_top_material.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\colors_radiobutton.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\colors_radiobutton.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\indicator_bg_bottom.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\Android\\library\\unspecified\\res\\drawable\\indicator_bg_bottom.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\buttoniconpress3.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\buttoniconpress3.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\design_fab_background.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\drawable\\design_fab_background.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\circle.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\circle.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_track_material.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_item_background_holo_light.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\border_buttom.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable\\border_buttom.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\drawable\\__picker_checkbox_bg.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\Android\\PhotoPicker\\unspecified\\res\\drawable\\__picker_checkbox_bg.xml"
+    }
+]

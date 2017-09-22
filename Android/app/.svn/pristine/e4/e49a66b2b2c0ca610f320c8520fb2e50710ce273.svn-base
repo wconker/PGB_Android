@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/gsmc_l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="left"
+                android:text="所在公司"
+                android:textColor="#7A7A7A"
+                android:textSize="@dimen/wkhContent"
+                android:typeface="monospace" />
+
+            <TextView
+                android:id="@+id/gsmc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="33dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="0dp"
+                android:paddingTop="8dp"
+                android:textSize="@dimen/wkhContent" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_right_gray_arrow" />
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:paddingBottom="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="8dp"
+            android:paddingTop="12dp">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="10dp"
+                android:gravity="left"
+                android:text="申请信息"
+                android:textColor="#7A7A7A"
+                android:textSize="@dimen/wkhContent"
+                android:typeface="monospace" />
+
+            <EditText
+                android:id="@+id/sqxx"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@null"
+                android:drawablePadding="@dimen/ui_10_dip"
+                android:hint=""
+                android:textSize="@dimen/LargeTextSize" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="可能符合信息"
+            android:textColor="#7a7a7a" />
+
+        <ListView
+            android:id="@+id/mayaccord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/add_gs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/button_press"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_level1" />
+    </LinearLayout>
+
+
+</LinearLayout>

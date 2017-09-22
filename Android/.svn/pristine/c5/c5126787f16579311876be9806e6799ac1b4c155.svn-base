@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:text="基础信息"
+                android:textColor="@color/white"
+                android:textSize="@dimen/wkhContent_title"
+                android:typeface="monospace" />
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="资产类型"
+                android:textColor="@color/wkh_gray_deeper"
+                android:textSize="@dimen/wkhContent"
+                android:typeface="monospace" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="时间"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="33dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="物业地址"
+                android:maxLength="11"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="0dp"
+                android:paddingTop="8dp"
+                android:textSize="@dimen/wkhContent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_right_gray_arrow" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black" />
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="资产来源"
+                android:textColor="@color/wkh_gray_deeper"
+                android:textSize="@dimen/wkhContent"
+                android:id="@+id/zcly_tv"
+                android:typeface="monospace" />
+
+            <EditText
+
+                android:id="@+id/zcly_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="33dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="资产来源"
+                android:maxLength="11"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="0dp"
+                android:paddingTop="8dp"
+                android:textSize="@dimen/wkhContent" />
+
+            <TextView
+                android:id="@+id/tvOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/tvTime"
+                android:text="选择" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_right_gray_arrow" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="产品名称"
+                android:id="@+id/cpmc_tv"
+                android:textColor="@color/wkh_gray_deeper"
+                android:textSize="@dimen/wkhContent"
+                android:typeface="monospace" />
+
+            <EditText
+                android:id="@+id/cpmc_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="33dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="产品名称"
+                android:maxLength="11"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="0dp"
+                android:paddingTop="8dp"
+                android:textSize="@dimen/wkhContent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_right_gray_arrow" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="产品型号"
+                android:id="@+id/cpxh_tv"
+                android:textColor="@color/wkh_gray_deeper"
+                android:textSize="@dimen/wkhContent"
+                android:typeface="monospace" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="33dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="产品型号"
+                android:id="@+id/cpxh_et"
+                android:maxLength="11"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="0dp"
+                android:paddingTop="8dp"
+                android:textSize="@dimen/wkhContent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_right_gray_arrow" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="生产型号"
+                android:textColor="@color/wkh_gray_deeper"
+                android:textSize="@dimen/wkhContent"
+                android:typeface="monospace" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="33dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="生产型号"
+                android:maxLength="11"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="0dp"
+                android:paddingTop="8dp"
+                android:textSize="@dimen/wkhContent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_right_gray_arrow" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="购买年份"
+                android:textColor="@color/wkh_gray_deeper"
+                android:textSize="@dimen/wkhContent"
+                android:typeface="monospace" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="33dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="购买年份"
+                android:maxLength="11"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="0dp"
+                android:paddingTop="8dp"
+                android:textSize="@dimen/wkhContent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_right_gray_arrow" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="成新"
+                android:textColor="@color/wkh_gray_deeper"
+                android:textSize="@dimen/wkhContent"
+                android:typeface="monospace" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="33dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="成新"
+                android:maxLength="11"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="0dp"
+                android:paddingTop="8dp"
+                android:textSize="@dimen/wkhContent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_right_gray_arrow" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="使用状况"
+                android:textColor="@color/wkh_gray_deeper"
+                android:textSize="@dimen/wkhContent"
+                android:typeface="monospace" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="33dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="使用状况"
+                android:maxLength="11"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="0dp"
+                android:paddingTop="8dp"
+                android:textSize="@dimen/wkhContent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_right_gray_arrow" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black" />
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="重点描述"
+                android:textColor="@color/wkh_gray_deeper"
+                android:textSize="@dimen/wkhContent"
+                android:typeface="monospace" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="33dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="重点描述"
+                android:maxLength="11"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="0dp"
+                android:paddingTop="8dp"
+                android:textSize="@dimen/wkhContent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_right_gray_arrow" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black" />
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="资产照片"
+                android:textColor="@color/wkh_gray_deeper"
+                android:textSize="@dimen/wkhContent"
+                android:typeface="monospace" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="33dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="资产照片"
+                android:maxLength="11"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="0dp"
+                android:paddingTop="8dp"
+                android:textSize="@dimen/wkhContent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_right_gray_arrow" />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="报价设置"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wkhContent_title"
+                    android:typeface="monospace" />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="询价有效时间"
+                    android:textColor="@color/wkh_gray_deeper"
+                    android:textSize="@dimen/wkhContent"
+                    android:typeface="monospace" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="33dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="询价有效时间"
+                    android:maxLength="11"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="0dp"
+                    android:paddingTop="8dp"
+                    android:textSize="@dimen/wkhContent" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/img_right_gray_arrow" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="报价条数与报酬"
+                    android:textColor="@color/wkh_gray_deeper"
+                    android:textSize="@dimen/wkhContent"
+                    android:typeface="monospace" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="33dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="报价条数与报酬"
+                    android:maxLength="11"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="0dp"
+                    android:paddingTop="8dp"
+                    android:textSize="@dimen/wkhContent" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/img_right_gray_arrow" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提交" />
+    </LinearLayout>
+</LinearLayout>

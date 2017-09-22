@@ -1,0 +1,359 @@
+package com.android.pgb.Fragment;
+
+
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
+import android.support.v4.app.Fragment;
+import android.text.TextUtils;
+import android.util.Log;
+import android.util.SparseArray;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.GridView;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.alipay.sdk.app.PayTask;
+import com.android.pgb.Activity.Activity_Login;
+
+import com.android.pgb.Activity.Activity_Me.Activity_Account;
+import com.android.pgb.Activity.Activity_Me.Activity_Auth;
+import com.android.pgb.Activity.Activity_Me.Activity_BindInfo;
+import com.android.pgb.Activity.Activity_Me.Activity_FastAuth;
+import com.android.pgb.Activity.Activity_Me.Activity_TX;
+import com.android.pgb.Activity.Activity_Me.Activity_Userinstruction;
+import com.android.pgb.Activity.Activity_Me.CompanyMate;
+import com.android.pgb.Activity.PayConfirm;
+import com.android.pgb.Bean.UserInfo;
+import com.android.pgb.BroadCast.ExChange;
+import com.android.pgb.R;
+import com.android.pgb.Utils.CheckUserInfo;
+import com.android.pgb.Utils.CommonAdapter;
+import com.android.pgb.Utils.CommonViewHolder;
+import com.android.pgb.Utils.JSONUtils;
+import com.android.pgb.Utils.SharedPreferences.SharedPreferencesUtils;
+import com.android.pgb.alipay.AuthResult;
+import com.android.pgb.alipay.PayDemoActivity;
+import com.android.pgb.alipay.PayResult;
+import com.android.pgb.alipay.util.OrderInfoUtil2_0;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class me extends Fragment implements ExChange.CallBackForData, View.OnClickListener {
+    private LinearLayout smrz, wdbj, CompanyMate, fc, email_bind, td, mycomp_bind, phone_bind, fast_auth, yhxy;
+    private GridView gv;
+    private Button login_out;
+    private TextView zhye, jf, zw, name, dzyx, sjhm, gsmc, fcrzyj, tdrzyj, smrzyj;
+    private ImageView tx_img;
+    private me.GvAdapter adapter;
+    private UserInfo userInfo;
+    private ExChange ex;
+    private List<Double> list;
+    private ImageView gs_icon, sj_icon, yx_icon, sm_icon, fc_icon, td_icon;
+    private View view;
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_me, container, false);
+        ex = new ExChange(this);
+        this.view = view;
+
+        initView(view);
+        return view;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        ex.getUserinfo();
+
+    }
+
+    void setBdIcon(ImageView view, int bz) {
+        if (bz == 1) {
+            view.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.success));
+        }
+        if (bz == -1) {
+            view.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.warn));
+        }
+    }
+
+    void setRzIcon(ImageView view, int bz) {
+        if (bz == 1) {
+            view.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.wait));
+        }
+        if (bz == -1) {
+            view.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.warn));
+        }
+        if (bz == 2) {
+            view.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.success));
+        }
+    }
+
+    private void initView(View view) {
+
+        userInfo = (UserInfo) SharedPreferencesUtils.readObject(getActivity(), "userinfo");
+        if (userInfo == null)
+            return;
+
+        CheckUserInfo.setUserInfo(userInfo);
+        list = new ArrayList<>();
+        list.add(Double.parseDouble(userInfo.getZhye()));
+        list.add(Double.parseDouble(userInfo.getSrzhye()));
+        list.add((double) (userInfo.getJf()));
+        list.add(00.0);
+        list.add(00.0);
+        list.add(00.0);
+        zw = (TextView) view.findViewById(R.id.zw);
+        fcrzyj = (TextView) view.findViewById(R.id.fcrzyj);
+        smrzyj = (TextView) view.findViewById(R.id.smrzyj);
+        tdrzyj = (TextView) view.findViewById(R.id.tdrzyj);
+        fcrzyj.setText(userInfo.getFgrzyj().toString().equals("null") ? "" : userInfo.getFgrzyj());
+        smrzyj.setText(userInfo.getSmrzyj().toString().equals("null") ? "" : userInfo.getSmrzyj());
+        tdrzyj.setText(userInfo.getTgrzyj().toString().equals("null") ? "" : userInfo.getTgrzyj());
+        CompanyMate = (LinearLayout) view.findViewById(R.id.CompanyMate);
+
+        fast_auth = (LinearLayout) view.findViewById(R.id.fast_auth);
+        fast_auth.setOnClickListener(this);
+        email_bind = (LinearLayout) view.findViewById(R.id.email_bind);
+        yhxy = (LinearLayout) view.findViewById(R.id.yhxy);
+        yhxy.setOnClickListener(this);
+        email_bind.setOnClickListener(this);
+        phone_bind = (LinearLayout) view.findViewById(R.id.phone_bind);
+        phone_bind.setOnClickListener(this);
+        mycomp_bind = (LinearLayout) view.findViewById(R.id.mycomp_bind);
+        mycomp_bind.setOnClickListener(this);
+        name = (TextView) view.findViewById(R.id.name);
+        gv = (GridView) view.findViewById(R.id.gv);
+        adapter = new me.GvAdapter(getActivity(), list, R.layout.gv_layout);
+
+        gv.setAdapter(adapter);
+        gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+            switch (i)
+            {
+                case 0:
+                case 1:
+                    Intent it = new Intent(getActivity(), Activity_Account.class);
+                    it.putExtra("index", i);
+                    startActivity(it);
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    Intent it2 = new Intent(getActivity(), Activity_TX.class);
+                    startActivity(it2);
+                    break;
+            }
+            }
+        });
+        smrz = (LinearLayout) view.findViewById(R.id.smrz);
+        tx_img = (ImageView) view.findViewById(R.id.tx_img);
+        tx_img.setOnClickListener(this);
+        fc = (LinearLayout) view.findViewById(R.id.fc);
+        td = (LinearLayout) view.findViewById(R.id.td);
+        login_out = (Button) view.findViewById(R.id.login_out);
+        login_out.setOnClickListener(this);
+        dzyx = (TextView) view.findViewById(R.id.dzyx);
+        gsmc = (TextView) view.findViewById(R.id.gsmc);
+        sjhm = (TextView) view.findViewById(R.id.sjhm);
+        sjhm.setText(userInfo.getSjhm());
+        gsmc.setText(userInfo.getGsmc());
+        dzyx.setText(userInfo.getDzyx());
+        gs_icon = (ImageView) view.findViewById(R.id.gs_icon);
+        setBdIcon(gs_icon, userInfo.getGsmcbdbz());
+        yx_icon = (ImageView) view.findViewById(R.id.yx_icon);
+        setBdIcon(yx_icon, userInfo.getDzyxjhbz());
+        fc_icon = (ImageView) view.findViewById(R.id.fdc_icon);
+        setRzIcon(fc_icon, userInfo.getFdcgjsbz());
+        sm_icon = (ImageView) view.findViewById(R.id.sm_icon);
+        setRzIcon(sm_icon, userInfo.getScrzbz());
+        td_icon = (ImageView) view.findViewById(R.id.td_icon);
+        setRzIcon(td_icon, userInfo.getTdgjsbz());
+        sj_icon = (ImageView) view.findViewById(R.id.sj_icon);
+        setBdIcon(sj_icon, userInfo.getSjhmbdbz());
+        name.setText(userInfo.getNc());
+        smrz.setOnClickListener(this);
+        fc.setOnClickListener(this);
+        td.setOnClickListener(this);
+        zw.setText(userInfo.getTitle());
+        CompanyMate.setOnClickListener(this);
+        if (userInfo.getTx_img().equals("null")) {
+            Glide.with(this).load(R.drawable.user).asBitmap().into(tx_img);
+        } else {
+            Glide.with(getActivity()).load(userInfo.getTx_img()).asBitmap().diskCacheStrategy(DiskCacheStrategy.ALL).into(tx_img);
+        }
+    }
+
+    class GvAdapter extends CommonAdapter<Double> {
+
+        public GvAdapter(Context context, List list, int layoutId) {
+            super(context, list, layoutId);
+        }
+
+        @Override
+        public void setViewContent(CommonViewHolder viewHolder, Double str) {
+
+            switch (viewHolder.getPostion()) {
+                case 0:
+                    viewHolder.getView(R.id.imagetitle).setVisibility(View.GONE);
+                    viewHolder.getView(R.id.title).setVisibility(View.VISIBLE);
+                    viewHolder.setText(R.id.title, "账户余额").setText(R.id.value, str + "元");
+                    break;
+                case 1:
+                    viewHolder.getView(R.id.imagetitle).setVisibility(View.GONE);
+                    viewHolder.getView(R.id.title).setVisibility(View.VISIBLE);
+                    viewHolder.setText(R.id.title, "收入账户余额").setText(R.id.value, str + "元");
+                    break;
+                case 2:
+                    viewHolder.getView(R.id.imagetitle).setVisibility(View.GONE);
+                    viewHolder.getView(R.id.title).setVisibility(View.VISIBLE);
+                    viewHolder.setText(R.id.title, "用户积分").setText(R.id.value, str + "元");
+                    break;
+                case 3:
+                    viewHolder.getView(R.id.title).setVisibility(View.GONE);
+                    viewHolder.getView(R.id.imagetitle).setVisibility(View.VISIBLE);
+                    viewHolder.setImageResource(R.id.imagetitle, R.drawable.icon_set).setText(R.id.value, "设置");
+                    break;
+                case 4:
+                    viewHolder.getView(R.id.title).setVisibility(View.GONE);
+                    viewHolder.getView(R.id.imagetitle).setVisibility(View.VISIBLE);
+                    viewHolder.setImageResource(R.id.imagetitle, R.drawable.icon_cash).setText(R.id.value, "提现");
+                    break;
+                case 5:
+                    viewHolder.getView(R.id.title).setVisibility(View.GONE);
+                    viewHolder.getView(R.id.imagetitle).setVisibility(View.VISIBLE);
+                    viewHolder.setImageResource(R.id.imagetitle, R.drawable.apptalk).setText(R.id.value, "联系客服");
+                    break;
+            }
+
+
+        }
+    }
+
+    @Override
+    public void onClick(View v) {
+        int vid = v.getId();
+        Intent i = new Intent(getActivity(), Activity_Auth.class);
+        Intent ii = new Intent(getActivity(), Activity_BindInfo.class);
+        switch (vid) {
+            case R.id.tx_img:
+                Intent tx = new Intent(getActivity(), Activity_FastAuth.class);
+                startActivity(tx);
+                break;case R.id.smrz:
+                if(userInfo.getScrzbz()<2) {
+                    i.putExtra("type", "sm");
+                    startActivity(i);
+                }
+                break;
+            case R.id.fc:
+                if(userInfo.getFdcgjsbz()<2) {
+                    i.putExtra("type", "fc");
+                    startActivity(i);
+                }
+                break;
+            case R.id.td:
+                if(userInfo.getTdgjsbz()<2) {
+                    i.putExtra("type", "td");
+                    startActivity(i);
+                }
+                break;
+            case R.id.login_out:
+                SharedPreferences.Editor sp_ = SharedPreferencesUtils.getEditor(getActivity());
+                sp_.putString("userphone", "");
+                sp_.putString("yzm", "");
+                sp_.commit();
+                getActivity().startActivity(new Intent(getActivity(), Activity_Login.class));
+                break;
+            case R.id.email_bind:
+                ii.putExtra("type", "email");
+                getActivity().startActivity(ii);
+                break;
+            case R.id.phone_bind:
+                ii.putExtra("type", "phone");
+                getActivity().startActivity(ii);
+                break;
+            case R.id.mycomp_bind:
+                ii.putExtra("type", "company");
+                getActivity().startActivity(ii);
+                break;
+            case R.id.fast_auth:
+                Intent c = new Intent(getActivity(), Activity_FastAuth.class);
+                startActivity(c);
+                break;
+            case R.id.CompanyMate:
+                Intent to = new Intent(getActivity(), CompanyMate.class);
+                startActivity(to);
+                break;
+            case R.id.yhxy:
+                Intent to2 = new Intent(getActivity(), Activity_Userinstruction.class);
+                startActivity(to2);
+                break;
+        }
+    }
+
+    private Handler handler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            switch (msg.what) {
+                case 200:
+                    JSONArray object = JSONUtils.getJSONArray(JSONUtils.StringToJSON(_str), "data");
+                    try {
+                        UserInfo userInfo = new UserInfo((JSONObject) object.get(0));
+                        SharedPreferencesUtils.saveObject(getActivity(), "userinfo", userInfo);
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                    initView(view);
+                    break;
+                case 300:
+                    break;
+            }
+
+        }
+    };
+    private String _str = "";
+    private String _pay = "";
+
+    @Override
+    public void onMessage(String str, String cmd, int code) {
+        com.android.pgb.Utils.Log.e(str);
+        if (cmd.equals("user.getUserinfo")) {
+            if (code == 0) {
+                _str = str;
+                handler.sendEmptyMessage(200);
+
+            }
+        }
+
+    }
+}

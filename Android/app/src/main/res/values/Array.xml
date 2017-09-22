@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="decoration">
+        <item>毛坯</item>
+        <item>简单装修</item>
+        <item>中档装修</item>
+        <item>高档装修</item>
+    </string-array>
+    <string-array name="special">
+        <item>底层送大院落</item>
+        <item>底层送小院落</item>
+        <item>顶层送大阁楼和露台</item>
+        <item>顶层送小阁楼和露台</item>
+        <item>无</item>
+        <item>底层送院落和1层地下室</item>
+        <item>底层送院落和2层地下室</item>
+        <item>跃层</item>
+    </string-array>
+</resources>

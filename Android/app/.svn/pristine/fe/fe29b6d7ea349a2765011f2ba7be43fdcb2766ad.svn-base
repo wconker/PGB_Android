@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="custom_bar">
+        <attr name="titlename" format="string" />
+        <attr name="left_name" format="string" />
+        <attr name="left_img" format="reference" />
+        <attr name="left_visible" format="integer">
+            <enum name="visible" value="0x00000000" />
+            <enum name="invisible" value="0x00000004" />
+            <enum name="gone" value="0x00000008" />
+        </attr>
+        <attr name="right_name" format="string" />
+        <attr name="right_img" format="reference" />
+        <attr name="right_visible" format="integer">
+            <enum name="visible" value="0x00000000" />
+            <enum name="invisible" value="0x00000004" />
+            <enum name="gone" value="0x00000008" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="custom">
+        <attr name="name" format="string" />
+        <attr name="value" format="string" />
+        <attr name="unit" format="string" />
+    </declare-styleable>
+    <declare-styleable name="com.baidu.mobads.AdView">
+        <attr name="adSize" format="integer" />
+        <attr name="adId" format="string" />
+    </declare-styleable>
+    <declare-styleable name="HomeButton">
+        <attr name="backcolor" format="integer" />
+        <attr name="textSize" format="dimension" />
+        <attr name="big" format="boolean" />
+        <attr name="home" format="integer" />
+        <attr name="text" format="string" />
+    </declare-styleable>
+    <declare-styleable name="CircularImage">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+
+</resources>

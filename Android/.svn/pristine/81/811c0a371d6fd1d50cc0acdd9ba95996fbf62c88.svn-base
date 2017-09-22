@@ -1,0 +1,47 @@
+// Generated code from Butter Knife. Do not modify!
+package com.android.pgb.Activity;
+
+import android.view.View;
+import butterknife.ButterKnife.Finder;
+import butterknife.ButterKnife.ViewBinder;
+
+public class PayConfirm$$ViewBinder<T extends com.android.pgb.Activity.PayConfirm> implements ViewBinder<T> {
+  @Override public void bind(final Finder finder, final T target, Object source) {
+    View view;
+    view = finder.findRequiredView(source, 2131624360, "field 'xjBdw'");
+    target.xjBdw = finder.castView(view, 2131624360, "field 'xjBdw'");
+    view = finder.findRequiredView(source, 2131624361, "field 'xjSzcs'");
+    target.xjSzcs = finder.castView(view, 2131624361, "field 'xjSzcs'");
+    view = finder.findRequiredView(source, 2131624362, "field 'xjDx'");
+    target.xjDx = finder.castView(view, 2131624362, "field 'xjDx'");
+    view = finder.findRequiredView(source, 2131624363, "field 'xjBz'");
+    target.xjBz = finder.castView(view, 2131624363, "field 'xjBz'");
+    view = finder.findRequiredView(source, 2131624359, "field 'xjPay'");
+    target.xjPay = finder.castView(view, 2131624359, "field 'xjPay'");
+    view = finder.findRequiredView(source, 2131624364, "field 'ckPay'");
+    target.ckPay = finder.castView(view, 2131624364, "field 'ckPay'");
+    view = finder.findRequiredView(source, 2131624365, "field 'price'");
+    target.price = finder.castView(view, 2131624365, "field 'price'");
+    view = finder.findRequiredView(source, 2131624366, "field 'btn' and method 'onViewClicked'");
+    target.btn = finder.castView(view, 2131624366, "field 'btn'");
+    view.setOnClickListener(
+      new butterknife.internal.DebouncingOnClickListener() {
+        @Override public void doClick(
+          android.view.View p0
+        ) {
+          target.onViewClicked();
+        }
+      });
+  }
+
+  @Override public void unbind(T target) {
+    target.xjBdw = null;
+    target.xjSzcs = null;
+    target.xjDx = null;
+    target.xjBz = null;
+    target.xjPay = null;
+    target.ckPay = null;
+    target.price = null;
+    target.btn = null;
+  }
+}

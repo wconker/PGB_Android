@@ -1,0 +1,103 @@
+// Generated code from Butter Knife. Do not modify!
+package com.android.pgb.Activity.Activity_Job;
+
+import android.view.View;
+import butterknife.ButterKnife.Finder;
+import butterknife.ButterKnife.ViewBinder;
+
+public class Activity_AddZP$$ViewBinder<T extends com.android.pgb.Activity.Activity_Job.Activity_AddZP> implements ViewBinder<T> {
+  @Override public void bind(final Finder finder, final T target, Object source) {
+    View view;
+    view = finder.findRequiredView(source, 2131624281, "field 'qyyx'");
+    target.qyyx = finder.castView(view, 2131624281, "field 'qyyx'");
+    view = finder.findRequiredView(source, 2131624280, "field 'gsmc'");
+    target.gsmc = finder.castView(view, 2131624280, "field 'gsmc'");
+    view = finder.findRequiredView(source, 2131624262, "field 'lxdh'");
+    target.lxdh = finder.castView(view, 2131624262, "field 'lxdh'");
+    view = finder.findRequiredView(source, 2131624283, "field 'zpgwTv'");
+    target.zpgwTv = finder.castView(view, 2131624283, "field 'zpgwTv'");
+    view = finder.findRequiredView(source, 2131624282, "field 'zpgw' and method 'onViewClicked'");
+    target.zpgw = finder.castView(view, 2131624282, "field 'zpgw'");
+    view.setOnClickListener(
+      new butterknife.internal.DebouncingOnClickListener() {
+        @Override public void doClick(
+          android.view.View p0
+        ) {
+          target.onViewClicked(p0);
+        }
+      });
+    view = finder.findRequiredView(source, 2131624287, "field 'gzddTv'");
+    target.gzddTv = finder.castView(view, 2131624287, "field 'gzddTv'");
+    view = finder.findRequiredView(source, 2131624286, "field 'gzdd' and method 'onViewClicked'");
+    target.gzdd = finder.castView(view, 2131624286, "field 'gzdd'");
+    view.setOnClickListener(
+      new butterknife.internal.DebouncingOnClickListener() {
+        @Override public void doClick(
+          android.view.View p0
+        ) {
+          target.onViewClicked(p0);
+        }
+      });
+    view = finder.findRequiredView(source, 2131624289, "field 'zgyqTv'");
+    target.zgyqTv = finder.castView(view, 2131624289, "field 'zgyqTv'");
+    view = finder.findRequiredView(source, 2131624288, "field 'zgyq' and method 'onViewClicked'");
+    target.zgyq = finder.castView(view, 2131624288, "field 'zgyq'");
+    view.setOnClickListener(
+      new butterknife.internal.DebouncingOnClickListener() {
+        @Override public void doClick(
+          android.view.View p0
+        ) {
+          target.onViewClicked(p0);
+        }
+      });
+    view = finder.findRequiredView(source, 2131624290, "field 'gwyq'");
+    target.gwyq = finder.castView(view, 2131624290, "field 'gwyq'");
+    view = finder.findRequiredView(source, 2131624291, "field 'xcbz'");
+    target.xcbz = finder.castView(view, 2131624291, "field 'xcbz'");
+    view = finder.findRequiredView(source, 2131624285, "field 'gzxzTv'");
+    target.gzxzTv = finder.castView(view, 2131624285, "field 'gzxzTv'");
+    view = finder.findRequiredView(source, 2131624284, "field 'gzxz' and method 'onViewClicked'");
+    target.gzxz = finder.castView(view, 2131624284, "field 'gzxz'");
+    view.setOnClickListener(
+      new butterknife.internal.DebouncingOnClickListener() {
+        @Override public void doClick(
+          android.view.View p0
+        ) {
+          target.onViewClicked(p0);
+        }
+      });
+    view = finder.findRequiredView(source, 2131624099, "field 'bar'");
+    target.bar = finder.castView(view, 2131624099, "field 'bar'");
+    view = finder.findRequiredView(source, 2131624121, "field 'btnSubmit' and method 'onViewClicked'");
+    target.btnSubmit = finder.castView(view, 2131624121, "field 'btnSubmit'");
+    view.setOnClickListener(
+      new butterknife.internal.DebouncingOnClickListener() {
+        @Override public void doClick(
+          android.view.View p0
+        ) {
+          target.onViewClicked(p0);
+        }
+      });
+    view = finder.findRequiredView(source, 2131624241, "field 'bz'");
+    target.bz = finder.castView(view, 2131624241, "field 'bz'");
+  }
+
+  @Override public void unbind(T target) {
+    target.qyyx = null;
+    target.gsmc = null;
+    target.lxdh = null;
+    target.zpgwTv = null;
+    target.zpgw = null;
+    target.gzddTv = null;
+    target.gzdd = null;
+    target.zgyqTv = null;
+    target.zgyq = null;
+    target.gwyq = null;
+    target.xcbz = null;
+    target.gzxzTv = null;
+    target.gzxz = null;
+    target.bar = null;
+    target.btnSubmit = null;
+    target.bz = null;
+  }
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RadioGroup
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:minHeight="50dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+
+
+            android:id="@+id/btn_index"
+            android:layout_width="0dp"
+            android:paddingTop="3dp"
+            android:drawableTop="@drawable/buttoniconpress"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:textSize="11dp"
+            android:gravity="center"
+            android:text="@string/index"
+            android:textColor="@drawable/colors_radiobutton" />
+
+        <RadioButton
+            android:textSize="11dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/buttoniconpress2"
+            android:checked="false"
+            android:gravity="center"
+            android:text="@string/enquiry"
+            android:textColor="@drawable/colors_radiobutton" />
+
+        <RadioButton
+            android:drawableTop="@drawable/buttoniconpress3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:textSize="11dp"
+            android:checked="false"
+            android:gravity="center"
+            android:text="@string/survey"
+            android:textColor="@drawable/colors_radiobutton" />
+
+        <RadioButton
+            android:drawableTop="@drawable/buttoniconpress4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:textSize="11dp"
+            android:checked="false"
+            android:gravity="center"
+            android:text="@string/me"
+            android:textColor="@drawable/colors_radiobutton" />
+    </RadioGroup>
+
+
+</LinearLayout>

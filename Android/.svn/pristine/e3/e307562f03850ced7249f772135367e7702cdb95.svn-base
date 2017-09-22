@@ -1,0 +1,37 @@
+package com.android.pgb.Bean;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+
+/**
+ * Created by kanghui on 2017/1/18.
+ */
+
+public class KCBean implements Parcelable {
+
+
+    protected KCBean(Parcel in) {
+    }
+
+    public static final Creator<KCBean> CREATOR = new Creator<KCBean>() {
+        @Override
+        public KCBean createFromParcel(Parcel in) {
+            return new KCBean(in);
+        }
+
+        @Override
+        public KCBean[] newArray(int size) {
+            return new KCBean[size];
+        }
+    };
+
+    @Override
+    public int describeContents() {
+
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+    }
+}

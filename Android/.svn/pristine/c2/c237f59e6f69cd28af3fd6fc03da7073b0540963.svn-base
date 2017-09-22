@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_up_load_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.android.pgb.Activity.ActivityUpLoadImage">
+    <com.android.pgb.View.CustomBar
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        custom:left_name="返回"
+        custom:right_visible="gone"
+        custom:titlename="文件上传">
+
+    </com.android.pgb.View.CustomBar>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="3dp" >
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user"
+            android:visibility="gone"
+            android:id="@+id/upload_image"/>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="9dp"
+        android:numColumns="3"
+        android:verticalSpacing="9dp"/>
+
+        <Button
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:id="@+id/upload"
+            android:layout_gravity="center"
+            android:background="@drawable/button_press"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定上传" />
+    </LinearLayout>
+</LinearLayout>

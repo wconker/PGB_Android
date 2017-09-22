@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/ui_10_dip"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:paddingBottom="1dp">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/e_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="杭州市滨江区太阳国际公寓2-1-1902室 85方"
+                android:textSize="@dimen/text_size_level3"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mybj_info_bz"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="f2/11"
+                android:textSize="@dimen/text_size_level4"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mybj_info_dj"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="单价：100 "
+                android:textColor="#757575"
+                android:textSize="@dimen/text_size_level4" />
+
+            <TextView
+                android:id="@+id/mybj_info_zj"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:background="#ffffcc"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="总价：4678万元"
+                android:textColor="#757575"
+                android:textSize="@dimen/text_size_level4" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/redbag" />
+
+            <TextView
+                android:id="@+id/info_bc"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:gravity="bottom"
+                android:text="￥15"
+                android:textColor="#e64340" />
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--android:gravity="bottom"-->
+            <!--android:text="X"-->
+            <!--android:textColor="#e64340" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/info_jsbjtj"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--android:gravity="bottom"-->
+            <!--android:text=""-->
+            <!--android:textColor="#e64340" />-->
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/info_zt"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/checkbox_border"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="已定标"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/info_lastTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="2017-03-08 16:19"
+                android:textSize="12dp" />
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

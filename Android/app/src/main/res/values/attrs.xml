@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="custom_bar">
+        <attr name="titlename" format="string" />
+        <attr name="left_name" format="string" />
+        <attr name="left_img" format="reference" />
+        <attr name="left_visible" format="integer">
+            <enum name="visible" value="0x00000000" />
+            <enum name="invisible" value="0x00000004" />
+            <enum name="gone" value="0x00000008" />
+        </attr>
+        <attr name="right_name" format="string" />
+        <attr name="right_img" format="reference" />
+        <attr name="right_visible" format="integer">
+            <enum name="visible" value="0x00000000" />
+            <enum name="invisible" value="0x00000004" />
+            <enum name="gone" value="0x00000008" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="custom">
+        <attr name="name" format="string" />
+        <attr name="value" format="string" />
+        <attr name="unit" format="string" />
+    </declare-styleable>
+    <declare-styleable name="com.baidu.mobads.AdView">
+        <attr name="adSize" format="integer" />
+        <attr name="adId" format="string" />
+    </declare-styleable>
+    <declare-styleable name="HomeButton">
+        <attr name="backcolor" format="integer" />
+        <attr name="textSize" format="dimension" />
+        <attr name="big" format="boolean" />
+        <attr name="home" format="integer" />
+        <attr name="text" format="string" />
+    </declare-styleable>
+    <declare-styleable name="CircularImage">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+    <!--<declare-styleable name="ProgressWheel">-->
+        <!--<attr name="matProg_progressIndeterminate" format="boolean" />-->
+        <!--<attr name="matProg_barColor" format="color" />-->
+        <!--<attr name="matProg_rimColor" format="color" />-->
+        <!--<attr name="matProg_rimWidth" format="dimension" />-->
+        <!--<attr name="matProg_spinSpeed" format="float" />-->
+        <!--<attr name="matProg_barSpinCycleTime" format="integer" />-->
+        <!--<attr name="matProg_circleRadius" format="dimension" />-->
+        <!--<attr name="matProg_fillRadius" format="boolean" />-->
+        <!--<attr name="matProg_barWidth" format="dimension" />-->
+        <!--<attr name="matProg_linearProgress" format="boolean" />-->
+    <!--</declare-styleable>-->
+
+    <declare-styleable name="RatingBar">
+        <!--星星间距-->
+        <attr format="dimension" name="starDistance"/>
+        <!--星星大小-->
+        <attr format="dimension" name="starSize"/>
+        <!--星星个数-->
+        <attr format="integer" name="starCount"/>
+        <!--星星空图-->
+        <attr format="reference" name="starEmpty"/>
+        <!--星星满图-->
+        <attr format="reference" name="starFill"/>
+    </declare-styleable>
+
+
+    <attr name="indicatorColor" format="color"/>
+    <attr name="dividerColor" format="color"/>
+    <attr name="bottomLineColor" format="color"/>
+    <attr name="dividerMargin" format="dimension"/>
+    <attr name="indicatorHeight" format="dimension"/>
+    <attr name="bottomLineHeight" format="dimension"/>
+    <attr name="dividerWidth" format="dimension"/>
+    <declare-styleable name="SlidingTabLayout">
+        <attr name="indicatorColor"/>
+        <attr name="dividerColor"/>
+        <attr name="bottomLineColor"/>
+        <attr name="dividerMargin"/>
+        <attr name="indicatorHeight"/>
+        <attr name="bottomLineHeight"/>
+        <attr name="dividerWidth"/>
+    </declare-styleable>
+
+    <declare-styleable name="roundedimageview">
+
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color"></attr>
+
+    </declare-styleable>
+
+</resources>

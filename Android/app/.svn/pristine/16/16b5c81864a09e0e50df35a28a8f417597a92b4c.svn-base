@@ -1,0 +1,174 @@
+package com.android.pgb.Fragment.XJ;
+
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.support.v4.app.ActivityOptionsCompat;
+import android.support.v4.app.Fragment;
+import android.text.format.DateUtils;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ListView;
+
+import com.android.pgb.Activity.Activity_XJ.Activity_XjInfo;
+import com.android.pgb.Activity.Activity_XJ.CreateXJ;
+import com.android.pgb.Adapter.CommAdapter;
+import com.android.pgb.Bean.XJBean;
+import com.android.pgb.BroadCast.ExChange;
+import com.android.pgb.R;
+import com.android.pgb.Utils.HTTPSUtils;
+import com.android.pgb.Utils.JSONUtils;
+import com.android.pgb.Utils.Log;
+import com.android.pgb.View.floatbutton.CustomFAB;
+import com.handmark.pulltorefresh.library.PullToRefreshBase;
+import com.handmark.pulltorefresh.library.PullToRefreshListView;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class XJList extends Fragment implements ExChange.CallBackForData {
+
+    private PullToRefreshListView pullListView;
+    private List<XJBean> listBean;
+    private ExChange ex;
+    private CommAdapter adapter;
+    private int pullFlag = 100;
+    private int CurrentPage = 1;
+
+    @Override
+    public View onCreateView(final LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_xjlist, container, false);
+        ex = new ExChange(this);
+        ex.client = HTTPSUtils.client;
+        Log.sys(this.getClass().getName() + "发送了getxjList");
+        listBean = new ArrayList<>();
+        pullListView = (PullToRefreshListView) view.findViewById(R.id.pulltorefresh);
+        adapter = new CommAdapter(getActivity(), listBean, R.layout.enquiry_item);
+        pullListView.setAdapter(adapter);
+
+        pullListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(getActivity(), Activity_XjInfo.class);
+                int xjid = listBean.get(position-1).getXjid();
+                intent.putExtra("xjid", xjid);
+                getActivity().startActivity(intent);
+
+            }
+        });
+        pullListView.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener2<ListView>() {
+            @Override
+            public void onPullDownToRefresh(PullToRefreshBase<ListView> refreshView) {
+                String label = DateUtils.formatDateTime(
+                        getActivity(),
+                        System.currentTimeMillis(),
+                        DateUtils.FORMAT_SHOW_TIME
+                                | DateUtils.FORMAT_SHOW_DATE
+                                | DateUtils.FORMAT_ABBREV_ALL);
+                // 显示最后更新的时间
+                refreshView.getLoadingLayoutProxy()
+                        .setLastUpdatedLabel(label);
+                ex.getxjList(1);
+                pullFlag = 0;
+            }
+
+            @Override
+            public void onPullUpToRefresh(PullToRefreshBase<ListView> refreshView) {
+                pullFlag = 1;
+                CurrentPage++;
+                ex.getxjList(CurrentPage);
+            }
+        });
+        final CustomFAB floatButton = (CustomFAB) view.findViewById(R.id.floatButton);
+        floatButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), CreateXJ.class);
+                ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), floatButton, "share");
+                getActivity().startActivity(intent, activityOptionsCompat.toBundle());
+            }
+        });
+
+        return view;
+    }
+
+    Handler timeHandler = new Handler();
+    Runnable runnable = new Runnable() {
+        @Override
+        public void run() {
+            adapter.notifyDataSetChanged();
+            handler.postDelayed(this, 1000);
+        }
+    };
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        ex.getxjList(1);
+        Log.e("我进入询价列表的OnResume里了");
+    }
+
+    // FIXME: 2017/3/14 数据处理中心
+    Handler handler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            String value = msg.getData().getString("getxjList");
+            JSONObject data ;
+            if (pullFlag == 0) {
+                listBean.clear();
+                CurrentPage = 0;
+            }
+            if (pullFlag == 1) {
+
+            }
+            try {
+                data = new JSONObject(value);
+                JSONArray arr = JSONUtils.getJSONArray(data, "data");
+                XJBean xjBean;
+                for (int i = 0; i < arr.length(); i++) {
+                    JSONObject temp = (JSONObject) arr.get(i);
+                    xjBean = new XJBean(temp);
+                    listBean.add(xjBean);
+                }
+                pullListView.onRefreshComplete();
+                adapter.notifyDataSetChanged();
+
+
+                timeHandler.post(runnable);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+    };
+
+    private int Count = 0;
+
+    @Override
+    public void onMessage(String str, String cmd, int code) {
+        Message msg = Message.obtain();
+
+        Log.e(str);
+        switch (cmd) {
+            case "business.getxjList":
+                Bundle bundle = new Bundle();
+                bundle.putString("getxjList", str);
+                msg.setData(bundle);
+                handler.sendMessage(msg);
+
+                break;
+        }
+    }
+}

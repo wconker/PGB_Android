@@ -1,0 +1,9 @@
+package com.android.pgb.Interface;
+
+/**
+ * Created by conker on 2017/3/26.
+ */
+
+public interface PhotoClick {
+   public void imgClick();
+}

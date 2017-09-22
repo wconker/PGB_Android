@@ -1,0 +1,92 @@
+package com.android.pgb.Utils;
+
+import com.android.pgb.Bean.UserInfo;
+
+import org.json.JSONObject;
+
+/**
+ * Created by kanghui on 2017/3/24.
+ */
+
+public class CheckUserInfo {
+
+    private static UserInfo mUserInfo;
+
+    public static void setUserInfo(UserInfo u) {
+
+      mUserInfo = u;
+    }
+    /*
+    检查实名认证
+     */
+    public static boolean checkSmrz() {
+
+        if (mUserInfo.getScrzbz() > 1) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /*
+检查房地产认证
+ */
+    public static boolean checkFdcgjs() {
+
+        if (mUserInfo.getFdcgjsbz() > 1) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /*
+检查土地认证
+ */
+    public  static boolean checkTdgjs() {
+
+        if (mUserInfo.getTdgjsbz() > 1) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /*
+检查手机绑定
+ */
+    public  static boolean checkPhone() {
+
+        if (mUserInfo.getSjhmbdbz() == 1) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /*
+检查email
+ */
+    public static boolean checkEmail() {
+
+        if (mUserInfo.getDzyxjhbz() == 1) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /*
+检查公司名
+ */
+    public static boolean checkGsmc() {
+
+        if (mUserInfo.getGsmcbdbz() == 1) {
+            return true;
+        }
+
+        return false;
+    }
+
+
+}

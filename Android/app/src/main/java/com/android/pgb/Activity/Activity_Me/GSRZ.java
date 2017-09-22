@@ -1,0 +1,232 @@
+package com.android.pgb.Activity.Activity_Me;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.net.Uri;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.provider.MediaStore;
+import android.support.v7.widget.PopupMenu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+
+import com.android.pgb.Activity.Activity_CK.Activity_AddTb;
+import com.android.pgb.Bean.UserInfo;
+import com.android.pgb.BroadCast.ExChange;
+import com.android.pgb.R;
+import com.android.pgb.Utils.HTTPSUtils;
+import com.android.pgb.Utils.ImageUpload;
+import com.android.pgb.Utils.JSONUtils;
+import com.android.pgb.Utils.Log;
+import com.android.pgb.Utils.SharedPreferences.SharedPreferencesUtils;
+import com.nostra13.universalimageloader.utils.L;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
+
+import static com.android.pgb.BroadCast.ExChange.*;
+
+public class GSRZ extends Activity implements CallBackForData, View.OnClickListener {
+
+    private ExChange ex;
+    private Button btn;
+    private ImageView yyzz, gsqt;
+    private Uri uri;
+    private String zzyypath, gsqtpath;
+    private int Choose = 0;
+    private String jgmc = "";
+    private String yyzzFJ = "", gsqtFJ = "";
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_gsrz);
+        ex = new ExChange(this);
+        yyzz = (ImageView) this.findViewById(R.id.yyzz);
+        gsqt = (ImageView) this.findViewById(R.id.gsqt);
+
+        btn = (Button) this.findViewById(R.id.add_btn);
+        yyzz.setOnClickListener(this);
+        btn.setOnClickListener(this);
+        gsqt.setOnClickListener(this);
+
+        jgmc = getIntent().getStringExtra("jgmc");
+
+        ex.verifyCompany(jgmc);
+
+
+    }
+
+
+    private void showPopupMenu(View view) {
+        // View当前PopupMenu显示的相对View的位置
+        PopupMenu popupMenu = new PopupMenu(this, view);
+        // menu布局
+        popupMenu.getMenuInflater().inflate(R.menu.main, popupMenu.getMenu());
+        // menu的item点击事件
+        popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+
+                int vid = item.getItemId();
+                switch (vid) {
+                    case R.id.action_local:
+                        Intent intent = new Intent();
+                        intent.setType("image/*");
+                        intent.setAction(Intent.ACTION_GET_CONTENT);
+                        startActivityForResult(intent, 1);
+                        break;
+                    case R.id.action_crame:
+                        Intent openCameraIntent = new Intent(
+                                MediaStore.ACTION_IMAGE_CAPTURE);
+                        //    openCameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, uri);
+                        startActivityForResult(openCameraIntent, 0);
+                        break;
+
+                }
+
+
+                return false;
+            }
+        });
+        // PopupMenu关闭事件
+        popupMenu.setOnDismissListener(new PopupMenu.OnDismissListener() {
+            @Override
+            public void onDismiss(PopupMenu menu) {
+                // Toast.makeText(getApplicationContext(), "关闭PopupMenu", Toast.LENGTH_SHORT).show();
+            }
+        });
+        popupMenu.show();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (data == null) {
+            return;
+        }
+        if (requestCode == 1) {// 从本地相册找
+            uri = data.getData();
+            if (Choose == 1) {
+                yyzz.setImageURI(uri);
+                zzyypath = ImageUpload.getImageAbsolutePath(this, uri);
+            }
+            if (Choose == 2) {
+                gsqt.setImageURI(uri);
+                gsqtpath = ImageUpload.getImageAbsolutePath(this, uri);
+            }
+        }
+        if (requestCode == 0) { //拍照图片
+            Bitmap bitmap = (Bitmap) data.getExtras().get("data");
+            uri = Uri.parse(MediaStore.Images.Media.insertImage(getContentResolver(), bitmap, null, null));
+            if (Choose == 1) {
+                yyzz.setImageBitmap(bitmap);
+                zzyypath = ImageUpload.getImageAbsolutePath(this, uri);
+            }
+            if (Choose == 2) {
+                gsqt.setImageBitmap(bitmap);
+                gsqtpath = ImageUpload.getImageAbsolutePath(this, uri);
+            }
+        }
+    }
+
+    private String _str = "";
+    private String _info = "";
+
+    @Override
+    public void onMessage(String str, String cmd, int code) {
+        _str = str;
+        Message message = Message.obtain();
+
+        if (code == 0) {
+
+            if (cmd.equals("user.verifyCompany")) {
+                _info = str;
+                handler.sendEmptyMessage(222);
+            } else {
+                message.what = 100;
+                handler.sendMessage(message);
+            }
+
+        } else {
+            message.what = 101;
+            handler.sendMessage(message);
+        }
+    }
+
+    Handler handler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            if (msg.what == 100) {
+                Log.MyToast(ex.getMessageInfo(_str), GSRZ.this);
+                finish();
+
+            }
+            if (msg.what == 101) {
+                Log.MyToast(ex.getMessageInfo(_str), GSRZ.this);
+
+            }
+            if (msg.what == 222) {
+
+                JSONObject data = null;
+                try {
+                    data = new JSONObject(_info);
+
+                    Log.e(_info);
+                    JSONObject obj = (JSONObject) data.get("data");
+                    yyzzFJ = obj.getString("yyzz");
+                    gsqtFJ = obj.getString("gsmt");
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+
+            }
+        }
+    };
+
+    @Override
+    public void onClick(View view) {
+
+        int vid = view.getId();
+        switch (vid) {
+            case R.id.add_btn:
+                Map<String, String> map = new HashMap<>();
+                map.put("userid", ex.userId.toString());
+                map.put("imgtype", "营业执照");
+                map.put("fjbs", yyzzFJ);
+
+                Map<String, String> map2 = new HashMap<>();
+                map2.put("userid", ex.userId.toString());
+                map2.put("imgtype", "公司照片");
+                map2.put("fjbs", gsqtFJ);
+                if (zzyypath != null && gsqtpath != null) {
+                    ex.send(new File(zzyypath), map);
+                    ex.send(new File(gsqtpath), map);
+                } else {
+                    Log.MyToast("请选择您的图片", this);
+                }
+                break;
+            case R.id.yyzz:
+                Choose = 1;
+                showPopupMenu(yyzz);
+                break;
+            case R.id.gsqt:
+                Choose = 2;
+                showPopupMenu(gsqt);
+                break;
+        }
+
+    }
+}

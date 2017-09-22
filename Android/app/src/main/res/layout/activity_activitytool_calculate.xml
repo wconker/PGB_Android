@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.android.pgb.Activity.Activity_Tool.Calculate">
+
+    <com.android.pgb.View.CustomBar
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        custom:left_name="返回"
+        custom:right_name=""
+        custom:titlename="计税工具">
+
+    </com.android.pgb.View.CustomBar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestSV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="3dp">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/wkh_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="left"
+                        android:text="物业定位"
+                        android:textColor="@color/black_wkh"
+                        android:textSize="@dimen/wkhContent_title"
+                        android:typeface="monospace" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/housecertificate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="89dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:text="评估总价"
+                        android:textColor="@color/wkh_gray_deeper"
+                        android:textSize="@dimen/wkhContent"
+                        android:typeface="monospace" />
+
+                    <EditText
+                        android:id="@+id/totalPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint=""
+                        android:inputType="numberDecimal"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="0dp"
+                        android:paddingTop="8dp"
+                        android:textSize="@dimen/wkhContent" />
+
+                    <TextView
+                        android:layout_width="69dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:text="万元"
+                        android:textColor="@color/wkh_gray_deeper"
+                        android:textSize="@dimen/wkhContent"
+                        android:typeface="monospace" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="89dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:text="评估单价"
+                        android:textColor="@color/wkh_gray_deeper"
+                        android:textSize="@dimen/wkhContent"
+                        android:typeface="monospace" />
+
+                    <EditText
+                        android:id="@+id/singlePrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint=""
+                        android:inputType="numberDecimal"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="0dp"
+                        android:paddingTop="8dp"
+                        android:textSize="@dimen/wkhContent" />
+
+                    <TextView
+                        android:layout_width="69dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:text="元/㎡"
+                        android:textColor="@color/wkh_gray_deeper"
+                        android:textSize="@dimen/wkhContent"
+                        android:typeface="monospace" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+
+
+                        android:layout_width="89dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:text="变现率"
+                        android:textColor="@color/wkh_gray_deeper"
+                        android:textSize="@dimen/wkhContent"
+                        android:typeface="monospace" />
+
+                    <EditText
+                        android:id="@+id/Percent"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint=""
+                        android:inputType="numberDecimal"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="0dp"
+                        android:paddingTop="8dp"
+                        android:textSize="@dimen/wkhContent" />
+
+                    <TextView
+                        android:layout_width="69dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:text="%"
+                        android:textColor="@color/wkh_gray_deeper"
+                        android:textSize="@dimen/wkhContent"
+                        android:typeface="monospace" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+
+                        android:layout_width="89dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:text="购入原价"
+                        android:textColor="@color/wkh_gray_deeper"
+                        android:textSize="@dimen/wkhContent"
+                        android:typeface="monospace" />
+
+                    <EditText
+                        android:id="@+id/OriginalPrice"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint=""
+                        android:inputType="numberDecimal"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="0dp"
+                        android:paddingTop="8dp"
+                        android:textSize="@dimen/wkhContent" />
+
+                    <TextView
+                        android:layout_width="69dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:text="万元"
+                        android:textColor="@color/wkh_gray_deeper"
+                        android:textSize="@dimen/wkhContent"
+                        android:typeface="monospace" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+
+                        android:layout_width="89dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:text="出售类型"
+                        android:textColor="@color/wkh_gray_deeper"
+                        android:textSize="@dimen/wkhContent"
+                        android:typeface="monospace" />
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:id="@+id/saleType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:textColor="@color/grayline_black"
+                                android:id="@+id/rg_personal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="个人"
+                                android:textSize="@dimen/wkhContent" />
+
+                            <RadioButton
+                                android:textColor="@color/grayline_black"
+                                android:id="@+id/rg_company"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:text="单位"
+                                android:textSize="@dimen/wkhContent" />
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+
+                        android:layout_width="89dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:text="住宅年限"
+                        android:textColor="@color/wkh_gray_deeper"
+                        android:textSize="@dimen/wkhContent"
+                        android:typeface="monospace" />
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:id="@+id/houseYear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:textColor="@color/grayline_black"
+                                android:id="@+id/rg_less2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="不足2年"
+                                android:textSize="@dimen/wkhContent" />
+
+                            <RadioButton
+                                android:textColor="@color/grayline_black"
+                                android:id="@+id/rg_more2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="满2年及以上"
+                                android:textSize="@dimen/wkhContent" />
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+
+                        android:layout_width="89dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:text="房屋类型"
+                        android:textColor="@color/wkh_gray_deeper"
+                        android:textSize="@dimen/wkhContent"
+                        android:typeface="monospace" />
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="vertical">
+
+
+                        <RadioGroup
+                            android:id="@+id/rg_houseType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:textColor="@color/grayline_black"
+                                android:id="@+id/rb_unUsual"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="非普通住宅"
+                                android:textSize="@dimen/wkhContent" />
+
+                            <RadioButton
+                                android:textColor="@color/grayline_black"
+                                android:id="@+id/rb_Usual"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="普通住宅"
+                                android:textSize="@dimen/wkhContent" />
+
+                            <RadioButton
+                                android:textColor="@color/grayline_black"
+                                android:id="@+id/rb_specific"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="非住宅"
+                                android:textSize="@dimen/wkhContent" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/gray" />
+
+                <Button
+                    android:id="@+id/getResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="35dp"
+                    android:background="@drawable/button_press"
+                    android:text="提交"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_level1" />
+                <!--第二内容不分-->
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/wkh_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="left"
+                        android:text="处置税费结果"
+                        android:textColor="@color/black_wkh"
+                        android:textSize="@dimen/wkhContent_title"
+                        android:typeface="monospace" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+
+
+                        android:layout_width="89dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:text="处置总价"
+                        android:textColor="@color/wkh_gray_deeper"
+                        android:textSize="@dimen/wkhContent"
+                        android:typeface="monospace" />
+
+                    <TextView
+
+                        android:id="@+id/deal_total"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint=""
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="0dp"
+                        android:paddingTop="8dp"
+                        android:textSize="@dimen/wkhContent" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+
+
+                        android:layout_width="89dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:text="处置单价"
+                        android:textColor="@color/wkh_gray_deeper"
+                        android:textSize="@dimen/wkhContent"
+                        android:typeface="monospace" />
+
+                    <TextView
+                        android:id="@+id/deal_signal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint=""
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="0dp"
+                        android:paddingTop="8dp"
+                        android:textSize="@dimen/wkhContent" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+
+
+                        android:layout_width="89dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:text="诉讼费"
+                        android:textColor="@color/wkh_gray_deeper"
+                        android:textSize="@dimen/wkhContent"
+                        android:typeface="monospace" />
+
+                    <TextView
+                        android:id="@+id/legalfare"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint=""
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="0dp"
+                        android:paddingTop="8dp"
+                        android:textSize="@dimen/wkhContent" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+
+
+                        android:layout_width="89dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:text="拍卖费"
+                        android:textColor="@color/wkh_gray_deeper"
+                        android:textSize="@dimen/wkhContent"
+                        android:typeface="monospace" />
+
+                    <TextView
+                        android:id="@+id/auctionfee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint=""
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="0dp"
+                        android:paddingTop="8dp"
+                        android:textSize="@dimen/wkhContent" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+
+
+                        android:layout_width="89dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:text="评估费"
+                        android:textColor="@color/wkh_gray_deeper"
+                        android:textSize="@dimen/wkhContent"
+                        android:typeface="monospace" />
+
+                    <TextView
+                        android:id="@+id/evalfare"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint=""
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="0dp"
+                        android:paddingTop="8dp"
+                        android:textSize="@dimen/wkhContent" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+
+
+                        android:layout_width="89dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:text="营业税附加"
+                        android:textColor="@color/wkh_gray_deeper"
+                        android:textSize="@dimen/wkhContent"
+                        android:typeface="monospace" />
+
+                    <TextView
+                        android:id="@+id/otherfare"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint=""
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="0dp"
+                        android:paddingTop="8dp"
+                        android:textSize="@dimen/wkhContent" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+
+
+                        android:layout_width="89dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:text="个人所得税"
+                        android:textColor="@color/wkh_gray_deeper"
+                        android:textSize="@dimen/wkhContent"
+                        android:typeface="monospace" />
+
+                    <TextView
+                        android:id="@+id/incometax"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint=""
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="0dp"
+                        android:paddingTop="8dp"
+                        android:textSize="@dimen/wkhContent" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+
+
+                        android:layout_width="89dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:text="印花税"
+                        android:textColor="@color/wkh_gray_deeper"
+                        android:textSize="@dimen/wkhContent"
+                        android:typeface="monospace" />
+
+                    <TextView
+                        android:id="@+id/stampfare"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint=""
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="0dp"
+                        android:paddingTop="8dp"
+                        android:textSize="@dimen/wkhContent" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+
+
+                        android:layout_width="89dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:text="土地增值税"
+                        android:textColor="@color/wkh_gray_deeper"
+                        android:textSize="@dimen/wkhContent"
+                        android:typeface="monospace" />
+
+                    <TextView
+                        android:id="@+id/valueadded"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint=""
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="0dp"
+                        android:paddingTop="8dp"
+                        android:textSize="@dimen/wkhContent" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+
+
+                        android:layout_width="89dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:text="合计"
+                        android:textColor="@color/wkh_gray_deeper"
+                        android:textSize="@dimen/wkhContent"
+                        android:typeface="monospace" />
+
+                    <TextView
+                        android:id="@+id/sum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint=""
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="0dp"
+                        android:paddingTop="8dp"
+                        android:textSize="@dimen/wkhContent" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.android.pgb.View.CircleProgressView
+                android:id="@+id/proLoading"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center_horizontal|center" />
+        </FrameLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

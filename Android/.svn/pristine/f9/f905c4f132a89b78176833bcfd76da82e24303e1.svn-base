@@ -1,0 +1,102 @@
+[
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_map.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable-xhdpi\\icon_map.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dot1.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable-xhdpi\\dot1.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\askprice_icon_48.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable-xhdpi\\askprice_icon_48.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\askprice_icon.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable-xhdpi\\askprice_icon.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_cash.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable-xhdpi\\icon_cash.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\money.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable-xhdpi\\money.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\wait.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable-xhdpi\\wait.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_set.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable-xhdpi\\icon_set.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\apptalk.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable-xhdpi\\apptalk.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\warn.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable-xhdpi\\warn.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\maps.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable-xhdpi\\maps.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\wxzf.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable-xhdpi\\wxzf.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\mail.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable-xhdpi\\mail.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dot.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable-xhdpi\\dot.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\zfb.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable-xhdpi\\zfb.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\asktag_icon.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable-xhdpi\\asktag_icon.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_dot_default.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable-xhdpi\\ic_dot_default.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\success.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable-xhdpi\\success.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_map_gray.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable-xhdpi\\icon_map_gray.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\error.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable-xhdpi\\error.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dot2.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable-xhdpi\\dot2.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_dot_selected.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable-xhdpi\\ic_dot_selected.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_stuff.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable-xhdpi\\ic_stuff.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\undo.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable-xhdpi\\undo.png"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\empty.png",
+        "source": "C:\\Android\\app\\src\\main\\res\\drawable-xhdpi\\empty.png"
+    }
+]

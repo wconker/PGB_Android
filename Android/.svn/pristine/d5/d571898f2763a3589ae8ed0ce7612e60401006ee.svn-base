@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\menu\\__picker_menu_preview.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\Android\\PhotoPicker\\unspecified\\res\\menu\\__picker_menu_preview.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\menu\\__picker_menu_picker.xml",
+        "source": "C:\\Android\\app\\build\\intermediates\\exploded-aar\\Android\\PhotoPicker\\unspecified\\res\\menu\\__picker_menu_picker.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\menu\\adminoption.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\menu\\adminoption.xml"
+    },
+    {
+        "merged": "C:\\Android\\app\\build\\intermediates\\res\\merged\\release\\menu\\main.xml",
+        "source": "C:\\Android\\app\\src\\main\\res\\menu\\main.xml"
+    }
+]
