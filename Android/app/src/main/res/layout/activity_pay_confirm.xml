@@ -7,16 +7,16 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context="com.android.pgb.Activity.PayConfirm">
+    tools:context="com.android.pinggubang.Activity.PayConfirm">
 
-    <com.android.pgb.View.CustomBar
+    <com.android.pinggubang.View.CustomBar
         android:id="@+id/bar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         custom:left_name="返回"
         custom:titlename="">
 
-    </com.android.pgb.View.CustomBar>
+    </com.android.pinggubang.View.CustomBar>
 
     <LinearLayout
         android:id="@+id/xj_pay"

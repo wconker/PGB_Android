@@ -6,9 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.android.pgb.Activity.T">
+    tools:context="com.android.pinggubang.Activity.T">
 
-    <com.android.pgb.View.Loading
+    <com.android.pinggubang.View.Loading
 
 
         android:layout_width="match_parent"

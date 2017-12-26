@@ -6,13 +6,13 @@
     android:orientation="vertical"
     android:background="#f2f3f4"
     xmlns:tl="http://schemas.android.com/apk/res-auto"
-    tools:context="com.android.pgb.Fragment.XJ.enquiry">
+    tools:context="com.android.pinggubang.Fragment.XJ.enquiry">
 
-    <com.android.pgb.View.CustomBar
+    <com.android.pinggubang.View.CustomBar
         android:id="@+id/bar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        custom:titlename="询价业务"></com.android.pgb.View.CustomBar>
+        custom:titlename="询价业务"></com.android.pinggubang.View.CustomBar>
 
     <com.flyco.tablayout.SlidingTabLayout
         android:id="@+id/topSlide"

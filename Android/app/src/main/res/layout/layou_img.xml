@@ -51,12 +51,12 @@
             android:textSize="@dimen/wkhContent"
             android:typeface="monospace" />
 
-        <com.android.pgb.Utils.Image.Photo
+        <com.android.pinggubang.Utils.Image.Photo
             android:id="@+id/photo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-        </com.android.pgb.Utils.Image.Photo>
+        </com.android.pinggubang.Utils.Image.Photo>
     </LinearLayout>
 
     <View

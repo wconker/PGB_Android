@@ -6,14 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.android.pgb.Activity.Activity_CK.Activity_TbInfo">
+    tools:context="com.android.pinggubang.Activity.Activity_CK.Activity_TbInfo">
 
-    <com.android.pgb.View.CustomBar
+    <com.android.pinggubang.View.CustomBar
         android:id="@+id/bar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         custom:left_name="返回"
-        custom:titlename="投标详情"></com.android.pgb.View.CustomBar>
+        custom:titlename="投标详情"></com.android.pinggubang.View.CustomBar>
 
 
     <ScrollView
@@ -326,14 +326,14 @@
                     android:textSize="@dimen/wkhContent_title"
                     android:typeface="monospace" />
 
-                <com.android.pgb.Utils.PhotoPicker.PhotoT
+                <com.android.pinggubang.Utils.PhotoPicker.PhotoT
                     android:padding="5dp"
                     android:id="@+id/tbinfo_fj"
                     android:background="@color/white"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                </com.android.pgb.Utils.PhotoPicker.PhotoT>
+                </com.android.pinggubang.Utils.PhotoPicker.PhotoT>
             </LinearLayout>
 
 

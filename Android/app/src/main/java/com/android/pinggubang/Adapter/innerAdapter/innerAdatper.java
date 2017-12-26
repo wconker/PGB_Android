@@ -1,0 +1,76 @@
+package com.android.pinggubang.Adapter.innerAdapter;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.android.pinggubang.Bean.ZBBean;
+import com.android.pinggubang.R;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by kanghui on 2017/1/18.
+ */
+
+public class innerAdatper extends BaseAdapter {
+    private List<ZBBean> mDatas = new ArrayList<>();
+    private LayoutInflater inflate;
+
+    public innerAdatper(List<ZBBean> mDatas, Context context) {
+        this.mDatas = mDatas;
+        inflate = inflate.from(context);
+    }
+
+    @Override
+    public int getCount() {
+        return mDatas.size();
+    }
+
+    @Override
+    public Object getItem(int position) {
+        return null;
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return position;
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        innerAdatper.ViewHolder vHolder;
+        if (convertView == null) {
+            vHolder = new innerAdatper.ViewHolder();
+            convertView = inflate.inflate(R.layout.inneradapter, null);
+            vHolder.time = (TextView) convertView.findViewById(R.id.tbsj);
+            vHolder.name = (TextView) convertView.findViewById(R.id.name);
+            vHolder.zt_bz = (ImageView) convertView.findViewById(R.id.zt_bz);
+            vHolder.pay = (TextView) convertView.findViewById(R.id.pay);
+            convertView.setTag(vHolder);
+        } else {
+            vHolder = (innerAdatper.ViewHolder) convertView.getTag();
+        }
+
+        ZBBean tempEntity = mDatas.get(position);
+        vHolder.name.setText(tempEntity.getNc());
+        if (tempEntity.getZbbz() == 1) {
+            vHolder.zt_bz.setVisibility(View.VISIBLE);
+        }
+        vHolder.time.setText(tempEntity.getTbsj());
+        vHolder.pay.setText("￥" + tempEntity.getTbj());
+        return convertView;
+    }
+
+    class ViewHolder {
+        ImageView zt_bz;
+        TextView name;
+        TextView pay;
+        TextView time;
+    }
+}

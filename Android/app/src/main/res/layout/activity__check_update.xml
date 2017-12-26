@@ -4,7 +4,7 @@
     android:id="@+id/activity__check_update"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.android.pgb.Activity.UpdateApp.Activity_CheckUpdate">
+    tools:context="com.android.pinggubang.Activity.UpdateApp.Activity_CheckUpdate">
 
 
 

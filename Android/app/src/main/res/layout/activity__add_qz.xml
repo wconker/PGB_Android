@@ -7,15 +7,15 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context="com.android.pgb.Activity.Activity_Job.Activity_AddQZ">
+    tools:context="com.android.pinggubang.Activity.Activity_Job.Activity_AddQZ">
 
-    <com.android.pgb.View.CustomBar
+    <com.android.pinggubang.View.CustomBar
         android:id="@+id/bar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         custom:left_name="返回"
         custom:right_name=""
-        custom:titlename="发布求职"></com.android.pgb.View.CustomBar>
+        custom:titlename="发布求职"></com.android.pinggubang.View.CustomBar>
 
     <ScrollView
         android:layout_width="match_parent"

@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.android.pgb.Activity.Core.PGJGInfo">
+    tools:context="com.android.pinggubang.Activity.Core.PGJGInfo">
 
-    <com.android.pgb.View.CustomBar
+    <com.android.pinggubang.View.CustomBar
         android:id="@+id/bar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -15,7 +15,7 @@
         custom:right_name=""
         custom:titlename="机构信息">
 
-    </com.android.pgb.View.CustomBar>
+    </com.android.pinggubang.View.CustomBar>
 
 
     <LinearLayout

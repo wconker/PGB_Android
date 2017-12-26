@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context="com.android.pgb.Fragment.XJ.enquiry_rich">
+    tools:context="com.android.pinggubang.Fragment.XJ.enquiry_rich">
 
     <com.handmark.pulltorefresh.library.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
         android:id="@+id/pulltorefresh"

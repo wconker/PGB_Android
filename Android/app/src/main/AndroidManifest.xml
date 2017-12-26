@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.pgb">
+    package="com.android.pinggubang">
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -331,6 +331,7 @@
             android:name=".Activity.FileLibrary.FileList"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
+        <activity android:name=".News.Test"></activity>
     </application>
 
 </manifest>

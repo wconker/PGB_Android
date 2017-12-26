@@ -6,9 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.android.pgb.Activity.EnquiryInfo">
+    tools:context="com.android.pinggubang.Activity.EnquiryInfo">
 
-    <com.android.pgb.View.CustomBar
+    <com.android.pinggubang.View.CustomBar
         android:id="@+id/bar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -16,7 +16,7 @@
         custom:right_name="我要报价"
         custom:titlename="询价详情">
 
-    </com.android.pgb.View.CustomBar>
+    </com.android.pinggubang.View.CustomBar>
 
     <ScrollView
         android:layout_width="fill_parent"

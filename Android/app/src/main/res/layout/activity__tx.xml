@@ -7,14 +7,14 @@
     android:layout_height="match_parent"
     android:background="#f5f4f9"
     android:orientation="vertical"
-    tools:context="com.android.pgb.Activity.Activity_Me.Activity_TX">
+    tools:context="com.android.pinggubang.Activity.Activity_Me.Activity_TX">
 
-    <com.android.pgb.View.CustomBar
+    <com.android.pinggubang.View.CustomBar
         android:id="@+id/bar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         custom:left_name="返回"
-        custom:titlename="提现"></com.android.pgb.View.CustomBar>
+        custom:titlename="提现"></com.android.pinggubang.View.CustomBar>
 
     <LinearLayout
         android:id="@+id/contact"

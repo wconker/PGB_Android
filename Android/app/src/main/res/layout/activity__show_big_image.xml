@@ -4,7 +4,7 @@
     android:id="@+id/activity__show_big_image"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.android.pgb.Activity.Core.Activity_ShowBigImage">
+    tools:context="com.android.pinggubang.Activity.Core.Activity_ShowBigImage">
 
     <ImageView
         android:id="@+id/bigImg"

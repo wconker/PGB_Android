@@ -6,9 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.android.pgb.Activity.Activity_MyBjInfo">
+    tools:context="com.android.pinggubang.Activity.Activity_MyBjInfo">
 
-    <com.android.pgb.View.CustomBar
+    <com.android.pinggubang.View.CustomBar
         android:id="@+id/bar"
         custom:left_name="返回"
         custom:right_name=""
@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp">
 
-    </com.android.pgb.View.CustomBar>
+    </com.android.pinggubang.View.CustomBar>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

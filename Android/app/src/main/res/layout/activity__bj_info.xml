@@ -6,14 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.android.pgb.Activity.Activity_XJ.Activity_BjInfo">
+    tools:context="com.android.pinggubang.Activity.Activity_XJ.Activity_BjInfo">
 
-    <com.android.pgb.View.CustomBar
+    <com.android.pinggubang.View.CustomBar
         android:id="@+id/bar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         custom:left_name="返回"
-        custom:titlename="报价详情"></com.android.pgb.View.CustomBar>
+        custom:titlename="报价详情"></com.android.pinggubang.View.CustomBar>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -268,13 +268,13 @@
                             android:textSize="@dimen/wkhContent" />
 
 
-                        <com.android.pgb.Utils.PhotoPicker.PhotoT
+                        <com.android.pinggubang.Utils.PhotoPicker.PhotoT
                             android:id="@+id/fj_layout"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="5dp">
 
-                        </com.android.pgb.Utils.PhotoPicker.PhotoT>
+                        </com.android.pinggubang.Utils.PhotoPicker.PhotoT>
 
 
                     </LinearLayout>
@@ -310,7 +310,7 @@
                 android:background="@color/white"
                 android:orientation="horizontal">
 
-                <!--<com.android.pgb.View.XCRoundImageView-->
+                <!--<com.android.pinggubang.View.XCRoundImageView-->
                 <!--android:layout_width="50dp"-->
                 <!--android:layout_height="50dp"-->
                 <!--android:layout_gravity="center_vertical"-->

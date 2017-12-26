@@ -6,14 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.android.pgb.Activity.Activity_Me.CompanyMate">
+    tools:context="com.android.pinggubang.Activity.Activity_Me.CompanyMate">
 
-    <com.android.pgb.View.CustomBar
+    <com.android.pinggubang.View.CustomBar
         android:id="@+id/bar"
         custom:left_name="返回"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        custom:titlename="我的同事"></com.android.pgb.View.CustomBar>
+        custom:titlename="我的同事"></com.android.pinggubang.View.CustomBar>
     <com.handmark.pulltorefresh.library.PullToRefreshListView
         xmlns:ptr="http://schemas.android.com/apk/res-auto"
         android:id="@+id/pulltorefresh"

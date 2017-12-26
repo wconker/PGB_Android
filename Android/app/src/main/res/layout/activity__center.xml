@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/dot"
     android:orientation="vertical"
-    tools:context="com.android.pgb.Activity.Guide.Activity_Center">
+    tools:context="com.android.pinggubang.Activity.Guide.Activity_Center">
 
     <!--<TextView-->
         <!--android:id="@+id/count"-->

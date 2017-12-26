@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.android.pgb.Activity.Activity_Job.Activity_jobInfo">
+    tools:context="com.android.pinggubang.Activity.Activity_Job.Activity_jobInfo">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"

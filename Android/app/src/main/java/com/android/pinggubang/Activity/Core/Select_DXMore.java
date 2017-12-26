@@ -1,0 +1,126 @@
+package com.android.pinggubang.Activity.Core;
+
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.ListView;
+
+import com.android.pinggubang.Bean.Group;
+import com.android.pinggubang.R;
+import com.android.pinggubang.Utils.CommonAdapter;
+import com.android.pinggubang.Utils.CommonViewHolder;
+import com.android.pinggubang.Utils.JSONUtils;
+import com.android.pinggubang.View.CBarView;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Select_DXMore extends Activity {
+    private List<String> list;
+    private ListView listView;
+    private Select_DXMore.ListViewAdapter adapter;
+    private Button add_btn;
+    private String SelectStr = "";
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_select__dxmore);
+        new CBarView(this, new CBarView.OnClickListener() {
+            @Override
+            public void onLeftClick() {
+                super.onLeftClick();
+                finish();
+            }
+            @Override
+            public void onRightClick() {
+                super.onRightClick();
+            }
+        }, null);
+        final String s = getIntent().getStringExtra("value");
+
+        String[] digitGroup = s.split("\\|");
+
+        list = new ArrayList<>();
+        for (int t = 0; t < digitGroup.length; t++)
+            list.add(digitGroup[t]);
+
+        final int Index = getIntent().getIntExtra("index", 0);
+        adapter = new Select_DXMore.ListViewAdapter(this, list, R.layout.dxmore_items);
+        listView = (ListView) this.findViewById(R.id.selectdx);
+        listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                CheckBox checkBox = (CheckBox) view.findViewById(R.id.y);
+                if (checkBox.isChecked()) {
+                    checkBox.setChecked(false);
+                    deletStr(SelectStr, list.get(i));
+                } else {
+                    checkBox.setChecked(true);
+                    SelectStr += list.get(i) + ",";
+                }
+            }
+        });
+        add_btn = (Button) this.findViewById(R.id.add_btn);
+        add_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SelectStr = "";
+                for (int c = 0; c < listView.getChildCount(); c++) {
+                    View chilview = listView.getChildAt(c);
+                    CheckBox checkBox = (CheckBox) chilview.findViewById(R.id.y);
+
+                    if (checkBox.isChecked()) {
+                        SelectStr+=list.get(c)+"、";
+                    }
+
+                }
+
+                Intent data = new Intent();
+                data.putExtra("StrValue", SelectStr);
+                data.putExtra("index", Index);
+                setResult(Index, data); //intent为A传来的带有Bundle的intent，当然也可以自己定义新的Bundle
+                finish();//此处一定要调用finish()方法
+            }
+        });
+
+    }
+
+
+    void deletStr(String str, String delValue) {
+        String[] value = str.split("\\,");
+        String newValue = "";
+        for (int i = 0; i < value.length; i++) {
+            if (!value[i].equals(delValue))
+            {
+                newValue += value[i] + ",";
+            }
+        }
+        SelectStr = newValue;
+    }
+
+
+    class ListViewAdapter extends CommonAdapter<String> {
+
+
+        public ListViewAdapter(Context context, List<String> list, int layoutId) {
+            super(context, list, layoutId);
+        }
+
+        @Override
+        public void setViewContent(CommonViewHolder viewHolder, final String s) {
+            viewHolder.setText(R.id.name, s);
+
+        }
+    }
+
+
+}

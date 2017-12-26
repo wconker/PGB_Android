@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:custom="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context="com.android.pgb.Fragment.CK.ZbList">
+    tools:context="com.android.pinggubang.Fragment.CK.ZbList">
 
 
     <com.handmark.pulltorefresh.library.PullToRefreshListView
@@ -24,7 +24,7 @@
 
     </com.handmark.pulltorefresh.library.PullToRefreshListView>
 
-    <com.android.pgb.View.floatbutton.CustomFAB
+    <com.android.pinggubang.View.floatbutton.CustomFAB
         android:id="@+id/floatButton"
         android:layout_width="46dp"
         android:layout_height="47dp"

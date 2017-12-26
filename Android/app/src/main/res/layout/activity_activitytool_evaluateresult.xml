@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.android.pgb.Activity.Activity_Tool.EvaluateResult">
+    tools:context="com.android.pinggubang.Activity.Activity_Tool.EvaluateResult">
 
-    <com.android.pgb.View.CustomBar
+    <com.android.pinggubang.View.CustomBar
         android:id="@+id/bar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -17,7 +17,7 @@
         custom:titlename="计税工具"
         tools:layout_editor_absoluteY="0dp">
 
-    </com.android.pgb.View.CustomBar>
+    </com.android.pinggubang.View.CustomBar>
 
     <FrameLayout
         android:layout_width="300dp"

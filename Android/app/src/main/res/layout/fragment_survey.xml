@@ -5,13 +5,13 @@
     android:layout_height="match_parent"
     xmlns:tl="http://schemas.android.com/apk/res-auto"
     xmlns:custom="http://schemas.android.com/apk/res-auto"
-    tools:context="com.android.pgb.Fragment.CK.survey">
+    tools:context="com.android.pinggubang.Fragment.CK.survey">
 
-    <com.android.pgb.View.CustomBar
+    <com.android.pinggubang.View.CustomBar
         android:id="@+id/bar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        custom:titlename="查勘业务"></com.android.pgb.View.CustomBar>
+        custom:titlename="查勘业务"></com.android.pinggubang.View.CustomBar>
 
     <com.flyco.tablayout.SlidingTabLayout
         android:id="@+id/topSlide"

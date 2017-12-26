@@ -6,15 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.android.pgb.Activity.Activity_MyBJ">
+    tools:context="com.android.pinggubang.Activity.Activity_MyBJ">
 
-    <com.android.pgb.View.CustomBar
+    <com.android.pinggubang.View.CustomBar
         android:id="@+id/bar"
         custom:left_name="返回"
         custom:right_name="查询"
         custom:titlename="我的报价"
         android:layout_width="match_parent"
-        android:layout_height="50dp"></com.android.pgb.View.CustomBar>
+        android:layout_height="50dp"></com.android.pinggubang.View.CustomBar>
 
     <com.handmark.pulltorefresh.library.PullToRefreshListView
         xmlns:ptr="http://schemas.android.com/apk/res-auto"

@@ -7,9 +7,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.android.pgb.Activity.Activity_XJ.Activity_addBJ">
+    tools:context="com.android.pinggubang.Activity.Activity_XJ.Activity_addBJ">
 
-    <com.android.pgb.View.CustomBar
+    <com.android.pinggubang.View.CustomBar
         android:id="@+id/bar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -17,7 +17,7 @@
         custom:right_name=""
         custom:titlename="我要报价">
 
-    </com.android.pgb.View.CustomBar>
+    </com.android.pinggubang.View.CustomBar>
 
 
     <ScrollView
@@ -292,13 +292,13 @@
 
     </LinearLayout>
 
-    <com.android.pgb.Utils.Image.Photo
+    <com.android.pinggubang.Utils.Image.Photo
         android:id="@+id/photo"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginTop="10dp">
 
-    </com.android.pgb.Utils.Image.Photo>
+    </com.android.pinggubang.Utils.Image.Photo>
 
     <LinearLayout
 

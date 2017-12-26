@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.android.pgb.Activity.SphereOfBusiness">
-    <com.android.pgb.View.CustomBar
+    tools:context="com.android.pinggubang.Activity.SphereOfBusiness">
+    <com.android.pinggubang.View.CustomBar
         android:id="@+id/bar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -15,7 +15,7 @@
         custom:right_visible="gone"
         custom:titlename="设置">
 
-    </com.android.pgb.View.CustomBar>
+    </com.android.pinggubang.View.CustomBar>
 
     <LinearLayout
         android:layout_width="match_parent"

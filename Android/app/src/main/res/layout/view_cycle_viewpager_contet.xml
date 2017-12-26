@@ -9,11 +9,11 @@
         android:layout_height="match_parent"
         android:background="@color/white" >
 
-        <com.android.pgb.Utils.BaseViewPager
+        <com.android.pinggubang.Utils.BaseViewPager
             android:id="@+id/viewPager"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
-        </com.android.pgb.Utils.BaseViewPager>
+        </com.android.pinggubang.Utils.BaseViewPager>
 
         <LinearLayout
             android:id="@+id/layout_viewpager_indicator"

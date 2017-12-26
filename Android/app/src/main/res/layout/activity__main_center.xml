@@ -8,7 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.android.pgb.Activity.Activity_MainCenter">
+    tools:context="com.android.pinggubang.Activity.Activity_MainCenter">
 
 
     <LinearLayout

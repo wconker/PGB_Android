@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#f2f3f4"
     android:orientation="vertical"
-    tools:context="com.android.pgb.Fragment.me">
+    tools:context="com.android.pinggubang.Fragment.me">
 
 
     <!--头部模块-->
@@ -35,7 +35,7 @@
                     android:paddingBottom="22dp">
 
 
-                    <com.android.pgb.View.RoundImageView
+                    <com.android.pinggubang.View.RoundImageView
                         android:id="@+id/tx_img"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
@@ -123,7 +123,9 @@
             android:numColumns="3"
             android:scrollbars="none"
             android:stretchMode="columnWidth"
-            android:verticalSpacing="0.0dip"></GridView>
+            android:verticalSpacing="0.0dip">
+
+        </GridView>
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.widget.NestedScrollView

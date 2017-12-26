@@ -6,14 +6,14 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.android.pgb.Activity.Activity_Me.Activity_Userinstruction">
-    <com.android.pgb.View.CustomBar
+    tools:context="com.android.pinggubang.Activity.Activity_Me.Activity_Userinstruction">
+    <com.android.pinggubang.View.CustomBar
         android:id="@+id/bar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         custom:left_name="返回"
         custom:right_visible="gone"
-        custom:titlename="用户协议"></com.android.pgb.View.CustomBar>
+        custom:titlename="用户协议"></com.android.pinggubang.View.CustomBar>
 
     <WebView
     android:id="@+id/webview"

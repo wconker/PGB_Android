@@ -7,15 +7,15 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context="com.android.pgb.Activity.Activity_ForgetPwd">
+    tools:context="com.android.pinggubang.Activity.Activity_ForgetPwd">
 
-    <com.android.pgb.View.CustomBar
+    <com.android.pinggubang.View.CustomBar
         android:id="@+id/bar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         custom:left_name="返回"
         custom:right_visible="gone"
-        custom:titlename="修改密码"></com.android.pgb.View.CustomBar>
+        custom:titlename="修改密码"></com.android.pinggubang.View.CustomBar>
 
     <LinearLayout
         android:padding="10dp"

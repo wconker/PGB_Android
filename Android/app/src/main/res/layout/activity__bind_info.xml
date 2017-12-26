@@ -7,9 +7,9 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context="com.android.pgb.Activity.Activity_Me.Activity_BindInfo">
+    tools:context="com.android.pinggubang.Activity.Activity_Me.Activity_BindInfo">
 
-    <com.android.pgb.View.CustomBar
+    <com.android.pinggubang.View.CustomBar
         android:id="@+id/bar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -17,7 +17,7 @@
         custom:right_name=""
         custom:titlename="信息绑定">
 
-    </com.android.pgb.View.CustomBar>
+    </com.android.pinggubang.View.CustomBar>
 
     <ViewStub
         android:id="@+id/phone_view"

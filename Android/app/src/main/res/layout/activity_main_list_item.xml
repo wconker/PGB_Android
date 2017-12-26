@@ -219,7 +219,7 @@
                 android:layout_marginTop="5dp"
                 android:textColor="@color/red"
                 android:text="暂无报价！"/>
-            <com.android.pgb.View.InnerListview.view.ChildListView
+            <com.android.pinggubang.View.InnerListview.view.ChildListView
                 android:visibility="gone"
                 android:id="@+id/info_listview"
                 android:layout_width="match_parent"
@@ -230,7 +230,7 @@
                 android:background="@color/white"
                 android:padding="5dp">
 
-            </com.android.pgb.View.InnerListview.view.ChildListView>
+            </com.android.pinggubang.View.InnerListview.view.ChildListView>
 
         </LinearLayout>
 

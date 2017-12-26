@@ -187,13 +187,13 @@
 
             </LinearLayout>
 
-            <com.android.pgb.View.InnerListview.view.ChildListView
+            <com.android.pinggubang.View.InnerListview.view.ChildListView
                 android:id="@+id/info_listview"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:background="@color/white">
 
-            </com.android.pgb.View.InnerListview.view.ChildListView>
+            </com.android.pinggubang.View.InnerListview.view.ChildListView>
 
             <View
                 android:layout_width="match_parent"

@@ -6,14 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.android.pgb.Activity.Activity_CK.Activity_MyTask">
+    tools:context="com.android.pinggubang.Activity.Activity_CK.Activity_MyTask">
 
-    <com.android.pgb.View.CustomBar
+    <com.android.pinggubang.View.CustomBar
         android:id="@+id/bar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         custom:left_name="返回"
-        custom:titlename="查勘表"></com.android.pgb.View.CustomBar>
+        custom:titlename="查勘表"></com.android.pinggubang.View.CustomBar>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -162,13 +162,13 @@
                     android:textSize="@dimen/wkhContent"
                     android:typeface="monospace" />
 
-                <com.android.pgb.Utils.PhotoPicker.PhotoT
+                <com.android.pinggubang.Utils.PhotoPicker.PhotoT
                     android:id="@+id/rw_fj"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="5dp">
 
-                </com.android.pgb.Utils.PhotoPicker.PhotoT>
+                </com.android.pinggubang.Utils.PhotoPicker.PhotoT>
 
 
             </LinearLayout>

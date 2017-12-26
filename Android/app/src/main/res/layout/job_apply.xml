@@ -19,7 +19,7 @@
         </android.support.v7.widget.RecyclerView>
     </android.support.v4.widget.SwipeRefreshLayout>
 
-    <com.android.pgb.View.floatbutton.CustomFAB
+    <com.android.pinggubang.View.floatbutton.CustomFAB
         android:id="@+id/floatButton"
         android:layout_width="46dp"
         android:layout_height="46dp"

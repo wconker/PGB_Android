@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.android.pgb.Activity.Activity_Me.GSRZ">
+    tools:context="com.android.pinggubang.Activity.Activity_Me.GSRZ">
                      <ScrollView
                          android:layout_width="match_parent"
                          android:layout_height="wrap_content">

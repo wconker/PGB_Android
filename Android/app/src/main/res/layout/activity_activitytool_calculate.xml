@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.android.pgb.Activity.Activity_Tool.Calculate">
+    tools:context="com.android.pinggubang.Activity.Activity_Tool.Calculate">
 
-    <com.android.pgb.View.CustomBar
+    <com.android.pinggubang.View.CustomBar
         android:id="@+id/bar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -15,7 +15,7 @@
         custom:right_name=""
         custom:titlename="计税工具">
 
-    </com.android.pgb.View.CustomBar>
+    </com.android.pinggubang.View.CustomBar>
 
     <android.support.v4.widget.NestedScrollView
         android:id="@+id/nestSV"
@@ -970,7 +970,7 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <com.android.pgb.View.CircleProgressView
+            <com.android.pinggubang.View.CircleProgressView
                 android:id="@+id/proLoading"
                 android:layout_width="56dp"
                 android:layout_height="56dp"

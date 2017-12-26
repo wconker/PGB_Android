@@ -8,7 +8,7 @@
     android:background="@color/white"
 
     android:orientation="vertical"
-    tools:context="com.android.pgb.Activity.Activity_Login">
+    tools:context="com.android.pinggubang.Activity.Activity_Login">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <com.android.pgb.View.RoundImageView
+            <com.android.pinggubang.View.RoundImageView
                 android:id="@+id/tx"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
@@ -84,7 +84,7 @@
 
     </LinearLayout>
 
-    <com.android.pgb.View.CustomBar
+    <com.android.pinggubang.View.CustomBar
         android:id="@+id/bar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -92,6 +92,6 @@
         custom:right_visible="gone"
         custom:titlename="登录">
 
-    </com.android.pgb.View.CustomBar>
+    </com.android.pinggubang.View.CustomBar>
 
 </LinearLayout>

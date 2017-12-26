@@ -7,9 +7,9 @@
     android:layout_height="match_parent"
     android:background="@color/wkh_gray"
     android:orientation="vertical"
-    tools:context="com.android.pgb.Activity.Activity_Me.Activity_FastAuth">
+    tools:context="com.android.pinggubang.Activity.Activity_Me.Activity_FastAuth">
 
-    <com.android.pgb.View.CustomBar
+    <com.android.pinggubang.View.CustomBar
         android:id="@+id/bar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -17,7 +17,7 @@
         custom:right_name=""
         custom:titlename="快速认证">
 
-    </com.android.pgb.View.CustomBar>
+    </com.android.pinggubang.View.CustomBar>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <com.android.pgb.View.RoundImageView
+            <com.android.pinggubang.View.RoundImageView
                 android:id="@+id/tx_img"
                 android:layout_margin="5dp"
                 android:layout_gravity="center"
